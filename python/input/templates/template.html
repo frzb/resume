@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ basics.name }} - Resume</title>
-    <link href="/static/styles.css" rel="stylesheet">
+    <link href="../static/css/tailwind.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 font-sans">
 
-    <!-- Header -->
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <!-- Main container -->
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+
+        <!-- Header -->
         <header class="border-b-2 border-gray-200 pb-4 mb-6">
-            <h1 class="text-3xl font-bold">{{ basics.name }}</h1>
+            <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
             <p class="text-xl text-gray-600">{{ basics.label }}</p>
             <p class="mt-2 text-gray-600">{{ basics.email }} | {{ basics.phone }}</p>
             <p class="text-gray-600">{{ basics.location.city }}, {{ basics.location.region }}</p>
             <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
         </header>
 
-        <!-- Summary -->
+        <!-- Summary Section -->
         <section>
-            <h2 class="text-2xl font-semibold mb-4">Summary</h2>
-            <p class="text-gray-700">{{ basics.summary }}</p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Summary</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">{{ basics.summary }}</p>
         </section>
 
-        <!-- Social Profiles -->
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold mb-4">Profiles</h2>
-            <ul>
-            {% for profile in basics.profiles %}
-                <li>
-                    <a class="text-blue-500 hover:underline" href="{{ profile.url }}">{{ profile.network }} - {{ profile.username }}</a>
-                </li>
-            {% endfor %}
+        <!-- Social Profiles Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Profiles</h2>
+            <ul class="space-y-2">
+                {% for profile in basics.profiles %}
+                    <li>
+                        <a class="text-blue-500 hover:underline text-lg" href="{{ profile.url }}">{{ profile.network }} - {{ profile.username }}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </section>
 
-        <!-- Work Experience -->
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold mb-4">Work Experience</h2>
-            <ul>
-            {% for job in work %}
-                <li class="mb-4">
-                    <h3 class="text-xl font-semibold">{{ job.position }} at <a class="text-blue-500 hover:underline" href="{{ job.url }}">{{ job.name }}</a></h3>
-                    <p class="text-gray-500">{{ job.startDate }} - {{ job.endDate }}</p>
-                    <p>{{ job.summary }}</p>
-                    <ul class="list-disc ml-6 mt-2">
-                    {% for highlight in job.highlights %}
-                        <li>{{ highlight }}</li>
-                    {% endfor %}
-                    </ul>
-                </li>
-            {% endfor %}
+        <!-- Work Experience Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Work Experience</h2>
+            <ul class="space-y-6">
+                {% for job in work %}
+                    <li>
+                        <h3 class="text-xl font-bold text-gray-800">{{ job.position }} at <a class="text-blue-500 hover:underline" href="{{ job.url }}">{{ job.name }}</a></h3>
+                        <p class="text-gray-500 text-sm">{{ job.startDate }} - {{ job.endDate }}</p>
+                        <p class="text-gray-700 text-base leading-relaxed">{{ job.summary }}</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-700 text-base space-y-2">
+                            {% for highlight in job.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
             </ul>
         </section>
 
@@ -60,3 +62,4 @@
     </div>
 </body>
 </html>
+
