@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ basics.name }} - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="../static/css/tailwind.css" rel="stylesheet">
+    <style>
+        @media print {
+            /* Remove the background and shadow for printing */
+            body, .max-w-4xl {
+                background: white !important; /* Ensure the background is white */
+                box-shadow: none !important; /* Remove shadow */
+            }
+
+            /* Optional: Set text color for better readability */
+            .text-gray-800,
+            .text-gray-600 {
+                color: black !important; /* Change text color to black */
+            }
+
+            /* Hide elements you don't want to print */
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-ubuntu font-thin">
 
     <!-- Main container -->
+    <!-- Hide background when printing -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
 
+
         <!-- Header -->
-        <header class="border-b-2 border-gray-200 pb-4 mb-6">
-            <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
-            <p class="text-xl text-gray-600">{{ basics.label }}</p>
-            <p class="mt-2 text-gray-600">{{ basics.email }} | {{ basics.phone }}</p>
-            <p class="text-gray-600">{{ basics.location.city }}, {{ basics.location.region }}</p>
-            <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
-        </header>
+        <div class="flex justify-end">
+            <header class="pb-4 mb-6">
+                <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
+                <p class="text-xl font-light text-gray-600">{{ basics.label }}</p>
+                <p class="ml-8 text-gray-600">{{ basics.location.address }}</p>
+                <p class="ml-8 text-gray-600"> {{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                <p class="ml-8 text-gray-600">E-Mail: {{ basics.email }}</p>
+                <p class="ml-8 text-gray-600"> Phone: {{ basics.phone }}</p>
+                <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
+            </header>
+        </div>
 
         <!-- Summary Section -->
         <section>
@@ -44,9 +71,9 @@
             <ul class="space-y-6">
                 {% for job in work %}
                     <li>
-                        <h3 class="text-xl font-bold text-gray-800">{{ job.position }} at <a class="text-blue-500 hover:underline" href="{{ job.url }}">{{ job.name }}</a></h3>
+                        <h3 class="text-lg font-bold text-gray-800">{{ job.position }} at <a class="text-blue-500 hover:underline" href="{{ job.url }}">{{ job.name }}</a></h3>
                         <p class="text-gray-500 text-sm">{{ job.startDate }} - {{ job.endDate }}</p>
-                        <p class="text-gray-700 text-base leading-relaxed">{{ job.summary }}</p>
+                        <p class="text-gray-700 text-base font-bold leading-relaxed">{{ job.summary }}</p>
                         <ul class="list-disc list-inside mt-2 text-gray-700 text-base space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
