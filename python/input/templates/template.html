@@ -12,6 +12,21 @@
             body, .max-w-4xl {
                 background: white !important; /* Ensure the background is white */
                 box-shadow: none !important; /* Remove shadow */
+                font-size: 11px
+            }
+
+             /* Adjust specific font sizes for printing */
+            h1 {
+                font-size: 16px; /* Example size for h1 */
+            }
+            h2 {
+                font-size: 14px; /* Example size for h2 */
+            }
+            h3 {
+                font-size: 12px; /* Example size for h3 */
+            }
+            p {
+                font-size: 11px; /* Example size for paragraph text */
             }
 
             /* Optional: Set text color for better readability */
@@ -74,7 +89,7 @@
                         <h3 class="text-lg font-bold text-gray-800">{{ job.position }} at <a class="text-blue-500 hover:underline" href="{{ job.url }}">{{ job.name }}</a></h3>
                         <p class="text-gray-500 text-sm">{{ job.startDate }} - {{ job.endDate }}</p>
                         <p class="text-gray-700 text-base font-bold leading-relaxed">{{ job.summary }}</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-700 text-base space-y-2">
+                        <ul class="list-disc list-outside mt-2 text-gray-700 text-base space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
                             {% endfor %}
