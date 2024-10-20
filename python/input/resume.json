@@ -1,0 +1,347 @@
+{
+  "basics": {
+    "name": "Gunter Miegel",
+    "email": "gunter.miegel@coinboot.io",
+    "phone": "+49 351 8626945",
+    "mobile": "+49 151 51587824",
+    "location": {
+      "address": "Zschertnitzer Weg 24",
+      "postalCode": "01217",
+      "city": "Dresden",
+      "country": "Germany"
+    },
+    "profiles": [
+      {
+        "network": "Coinboot",
+        "url": "https://coinboot.io",
+        "username": "coinboot"
+      }
+    ]
+  },
+  "work": [
+    {
+      "position": "Head of IT",
+      "name": "HolyPoly GmbH",
+      "location": "Dresden, Germany",
+      "startDate": "2021-08",
+      "summary": "Responsible for IT strategy, infrastructure, software development, and IT operations.",
+      "highlights": [
+        "Build-up and leading a 5-member IT team plus freelancers on various projects to enhance team capabilities and project delivery.",
+        "Introduced agile development methodologies and established automated CI/CD pipelines with trunk-based development, reducing cycle time by a factor of 2.",
+
+        "Designed and implemented software architecture for reverse logistics programs focused on recycling plastic toys for multinational toy and baby product companies, integrating with the corporate website via a REST API.",
+
+
+
+        "Developed a Bluetooth-WebSocket bridge service for a handheld proprietary X-ray fluorescence device,  inorganic impurities in recycled plastic toys and power tool housings.",
+        "Collected millions of data points, empowering corporate clients to make data-driven decisions on recycled plastic usage in new products.",
+
+        "Implemented open-source ERP software (ERPNext), adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application fragmentation."
+      ]
+    },
+    {
+      "position": "Senior Site Reliability Engineer",
+      "name": "Startnext Crowdfunding GmbH",
+      "location": "Dresden, Germany",
+      "startDate": "2019-11",
+      "endDate": "2021-07",
+      "summary": "Operations of the crowdfunding platform infrastructure.",
+      "highlights": [
+        "Migrated storage from NFS to Ceph distributed storage.",
+        "Implemented horizontal scaling and transformed the legacy PHP application to a container-based infrastructure.",
+        "Automated platform code deployment via CI/CD pipelines.",
+        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana."
+      ]
+    },
+    {
+      "position": "DevOps Engineer",
+      "name": "CLOUD&HEAT Technologies GmbH",
+      "location": "Dresden, Germany",
+      "startDate": "2014-04",
+      "endDate": "2019-10",
+      "summary": "Responsible for infrastructure operations, storage migration, and software development.",
+      "highlights": [
+        "Led the migration of Swift and GlusterFS to Ceph as unified distributed storage.",
+        "Planned and developed a software stack for the production of mobile GPU container datacenters.",
+        "Monitored and operated OpenStack in highly-distributed micro datacenters with waste heat recovery.",
+        "Provided in-house and presales IT infrastructure consulting."
+      ]
+    },
+    {
+      "position": "Founder and Project Leader",
+      "name": "Coinboot",
+      "location": "",
+      "startDate": "2017-08",
+      "endDate": "2022-09",
+      "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
+      "highlights": [
+        "Architected and developed the Coinboot framework for diskless computing optimized for blockchain hashing.",
+        "Presented recorded talks and further details on the project at https://coinboot.io."
+      ]
+    },
+    {
+      "position": "Linux-Systemadministrator",
+      "name": "BIT.Group GmbH",
+      "location": "Dresden, Germany",
+      "startDate": "2010-06",
+      "endDate": "2014-03",
+      "summary": "Managed cloud infrastructure for SAP Cloud."
+    },
+    {
+      "position": "Linux-Systemadministrator",
+      "name": "drinet UG",
+      "location": "Dresden, Germany",
+      "startDate": "2009-09",
+      "endDate": "2010-05",
+      "summary": "Provided IT support and infrastructure management."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Mobile Jugendarbeit Dresden-Süd e. V.",
+      "position": "IT Infrastructure Consultant",
+      "startDate": "2010",
+      "summary": "Provided IT infrastructure consulting and support for mobile youth work."
+    },
+    {
+      "organization": "Coding Courses for Grade Schoolers",
+      "position": "Instructor",
+      "startDate": "2019",
+      "summary": "Conducted coding courses for young students."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Berufsfachschule für Wirtschaft und Technik des TÜV Rheinland",
+      "location": "Dresden, Germany",
+      "area": "Information Technology",
+      "studyType": "National Certified Assistant",
+      "startDate": "2007",
+      "endDate": "2009"
+    },
+    {
+      "institution": "Technical University Dresden",
+      "location": "Dresden, Germany",
+      "area": "Mechatronics",
+      "studyType": "No degree",
+      "startDate": "2004",
+      "endDate": "2006"
+    },
+    {
+      "institution": "University of Applied Sciences Landshut",
+      "location": "Landshut, Germany",
+      "area": "Mechanical Engineering",
+      "studyType": "No degree",
+      "startDate": "2003",
+      "endDate": "2004"
+    },
+    {
+      "institution": "Berufliches Schulzentrum für Technik Zittau",
+      "location": "Zittau, Germany",
+      "area": "General Education",
+      "studyType": "Abitur (High School Exam)",
+      "startDate": "2003",
+      "endDate": "2000"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Operating Systems",
+      "keywords": [
+        "GNU/Linux (Debian, Ubuntu, SUSE, CentOS)",
+        "BSD (OpenBSD, FreeBSD)"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Bash/Shell",
+        "Ruby",
+        "Python"
+      ]
+    },
+    {
+      "name": "Configuration Management",
+      "keywords": [
+        "Ansible",
+        "Puppet"
+      ]
+    },
+    {
+      "name": "Container Technology",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "K3s"
+      ]
+    },
+    {
+      "name": "Dashboards and Analytics",
+      "keywords": [
+        "Grafana"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "GitLab",
+        "Travis CI"
+      ]
+    },
+    {
+      "name": "RDBMS",
+      "keywords": [
+        "MySQL/MariaDB",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "keywords": [
+        "Nginx",
+        "Apache HTTP Server",
+        "Apache Tomcat"
+      ]
+    },
+    {
+      "name": "Backup and Restore",
+      "keywords": [
+        "Bareos",
+        "BackupPC",
+        "Restic"
+      ]
+    },
+    {
+      "name": "Blockchain Technology",
+      "keywords": [
+        "Bitcoin",
+        "Ethereum"
+      ]
+    },
+    {
+      "name": "Directory Services",
+      "keywords": [
+        "OpenLDAP",
+        "Microsoft AD LDS"
+      ]
+    },
+    {
+      "name": "Disaster Recovery",
+      "keywords": [
+        "Relax-and-Recover"
+      ]
+    },
+    {
+      "name": "DNS",
+      "keywords": [
+        "BIND9",
+        "Dnsmasq"
+      ]
+    },
+    {
+      "name": "IaaS",
+      "keywords": [
+        "OpenStack"
+      ]
+    },
+    {
+      "name": "Load Balancing/Reverse Proxy",
+      "keywords": [
+        "Traefik",
+        "HAProxy"
+      ]
+    },
+    {
+      "name": "Mail - MTA/MDA",
+      "keywords": [
+        "Exim",
+        "Postfix",
+        "Dovecot"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "keywords": [
+        "Prometheus",
+        "Nagios",
+        "Check_MK"
+      ]
+    },
+    {
+      "name": "Packet Filter/Firewall",
+      "keywords": [
+        "Iptables",
+        "pf (OpenBSD/FreeBSD)"
+      ]
+    },
+    {
+      "name": "PKI/X.509",
+      "keywords": [
+        "OpenSSL"
+      ]
+    },
+    {
+      "name": "Social Coding",
+      "keywords": [
+        "GitHub",
+        "GitLab",
+        "BitBucket",
+        "Gitea"
+      ]
+    },
+    {
+      "name": "Storage",
+      "keywords": [
+        "Ceph",
+        "NFS",
+        "ZFS",
+        "Samba",
+        "Swift",
+        "Netapp Data Ontap",
+        "GlusterFS",
+        "DRBD"
+      ]
+    },
+    {
+      "name": "TSDB",
+      "keywords": [
+        "InfluxDB"
+      ]
+    },
+    {
+      "name": "Version Control",
+      "keywords": [
+        "Git",
+        "Subversion"
+      ]
+    },
+    {
+      "name": "Virtualization",
+      "keywords": [
+        "KVM",
+        "Xen",
+        "Virtualbox",
+        "libvirt/virsh",
+        "Vagrant"
+      ]
+    },
+    {
+      "name": "VPN",
+      "keywords": [
+        "OpenVPN",
+        "IPsec (OpenBSD)",
+        "WireGuard"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "CEFR C1"
+    }
+  ]
+}
