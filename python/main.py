@@ -2,6 +2,7 @@ import json
 import os
 import time
 import webbrowser
+import subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -20,12 +21,14 @@ class ResumeHandler(FileSystemEventHandler):
         print("Render on startup")
         self.load_data()
         self.render_template()
+        self.tailwindcss_build()
 
     def on_modified(self, event):
         print(event)
         print(f"Detected changes in {event.src_path}")
         self.load_data()
         self.render_template()
+        self.tailwindcss_build()
 
     def load_data(self):
         try:
@@ -36,6 +39,18 @@ class ResumeHandler(FileSystemEventHandler):
             print(self.resume_data)
         except Exception as e:
             print(f"Error loading data from {self.json_path}: {e}")
+
+    def tailwindcss_build(self):
+        command = "poetry run tailwindcss -o static/css/tailwind.css"
+        try:
+            result = subprocess.run(
+                command, check=True, capture_output=True, text=True, shell=True
+            )
+            print("Tailwind CSS compiled successfully:")
+            print(result.stdout)
+        except subprocess.CalledProcessError as e:
+            print("Error occurred while running Tailwind CSS:")
+            print(e.stderr)
 
     def render_template(self):
         try:
