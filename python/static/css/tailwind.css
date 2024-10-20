@@ -593,12 +593,12 @@ video {
   margin-right: auto;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-0 {
+  margin-bottom: 0px;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-8 {
@@ -667,8 +667,8 @@ video {
   padding: 1.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .font-ubuntu {

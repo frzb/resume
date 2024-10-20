@@ -54,6 +54,18 @@
       ]
     },
     {
+      "position": "Founder and Project Leader",
+      "name": "Coinboot",
+      "location": "",
+      "startDate": "2017-08",
+      "endDate": "2022-09",
+      "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
+      "highlights": [
+        "Architected and developed the Coinboot framework for diskless computing optimized for blockchain hashing.",
+        "Presented recorded talks and further details on the project at https://coinboot.io."
+      ]
+    },
+    {
       "position": "DevOps Engineer",
       "name": "CLOUD&HEAT Technologies GmbH",
       "location": "***REMOVED***, Germany",
@@ -65,18 +77,6 @@
         "Planned and developed a software stack for the production of mobile GPU container datacenters.",
         "Monitored and operated OpenStack in highly-distributed micro datacenters with waste heat recovery.",
         "Provided in-house and presales IT infrastructure consulting."
-      ]
-    },
-    {
-      "position": "Founder and Project Leader",
-      "name": "Coinboot",
-      "location": "",
-      "startDate": "2017-08",
-      "endDate": "2022-09",
-      "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
-      "highlights": [
-        "Architected and developed the Coinboot framework for diskless computing optimized for blockchain hashing.",
-        "Presented recorded talks and further details on the project at https://coinboot.io."
       ]
     },
     {
