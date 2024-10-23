@@ -21,7 +21,7 @@
   "work": [
     {
       "position": "Head of IT",
-      "name": "HolyPoly GmbH",
+      "name": "HolyPoly",
       "location": "Dresden, Germany",
       "startDate": "08/2021",
       "endDate": "now",
@@ -42,7 +42,7 @@
     },
     {
       "position": "Senior Site Reliability Engineer",
-      "name": "Startnext Crowdfunding GmbH",
+      "name": "Startnext",
       "location": "Dresden, Germany",
       "startDate": "11/2019",
       "endDate": "07/2021",
@@ -68,7 +68,7 @@
     },
     {
       "position": "DevOps Engineer",
-      "name": "CLOUD&HEAT Technologies GmbH",
+      "name": "CLOUD&HEAT",
       "location": "Dresden, Germany",
       "startDate": "04/2014",
       "endDate": "10/2019",
@@ -87,7 +87,7 @@
     },
     {
       "position": "Linux-Systemadministrator",
-      "name": "BIT.Group GmbH",
+      "name": "BIT.Group",
       "location": "Dresden, Germany",
       "startDate": "06/2010",
       "endDate": "03/2014",
@@ -95,7 +95,7 @@
     },
     {
       "position": "Linux-Systemadministrator",
-      "name": "drinet UG",
+      "name": "drinet",
       "location": "Dresden, Germany",
       "startDate": "2009-09",
       "endDate": "2010-05",
