@@ -23,7 +23,8 @@
       "position": "Head of IT",
       "name": "HolyPoly GmbH",
       "location": "Dresden, Germany",
-      "startDate": "2021-08",
+      "startDate": "08/2021",
+      "endDate": "now",
       "summary": "Responsible for all aspects IT: strategy, infrastructure, services, software development,  operations and security.",
       "highlights": [
         "Build-up and leading a 5-member IT team plus freelancers on various projects to enhance team capabilities and project delivery.",
@@ -43,8 +44,8 @@
       "position": "Senior Site Reliability Engineer",
       "name": "Startnext Crowdfunding GmbH",
       "location": "Dresden, Germany",
-      "startDate": "2019-11",
-      "endDate": "2021-07",
+      "startDate": "11/2019",
+      "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
         "Migrated storage from NFS to Ceph distributed storage.",
@@ -57,8 +58,8 @@
       "position": "Founder and Project Leader",
       "name": "Coinboot",
       "location": "",
-      "startDate": "2017-08",
-      "endDate": "2022-09",
+      "startDate": "08/2017",
+      "endDate": "09/2022",
       "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
       "highlights": [
         "Architected and developed the Coinboot framework for diskless computing optimized for blockchain hashing.",
@@ -69,8 +70,8 @@
       "position": "DevOps Engineer",
       "name": "CLOUD&HEAT Technologies GmbH",
       "location": "Dresden, Germany",
-      "startDate": "2014-04",
-      "endDate": "2019-10",
+      "startDate": "04/2014",
+      "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development.",
       "highlights": [
         "Led the migration of Swift and GlusterFS to Ceph as unified distributed storage.",
@@ -80,11 +81,16 @@
       ]
     },
     {
+      "position": "Parental Leave",
+      "startDate": "11/2012",
+      "endDate": "08/2013"
+    },
+    {
       "position": "Linux-Systemadministrator",
       "name": "BIT.Group GmbH",
       "location": "Dresden, Germany",
-      "startDate": "2010-06",
-      "endDate": "2014-03",
+      "startDate": "06/2010",
+      "endDate": "03/2014",
       "summary": "Managed cloud infrastructure for SAP Cloud."
     },
     {
