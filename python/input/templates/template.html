@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Take this settings with a grain of salt, I have not much experience with CSS and Tailwind -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,26 @@
     <style>
         @media print {
             /* Remove the background and shadow for printing */
-            body, .max-w-4xl {
+            body, .max-w-4xl, .list-disc  {
                 background: white !important; /* Ensure the background is white */
                 box-shadow: none !important; /* Remove shadow */
                 margin-top: 0 !important; /* Remove top margin */
-                font-size: 10px
+                font-size: 13px !important;
+                line-height: 135% !important;
             }
 
              /* Adjust specific font sizes for printing */
             h1 {
-                font-size: 13px; /* Example size for h1 */
+                font-size: 16px; /* Example size for h1 */
             }
             h2 {
-                font-size: 12px; /* Example size for h2 */
+                font-size: 15px; /* Example size for h2 */
             }
             h3 {
-                font-size: 11px; /* Example size for h3 */
+                font-size: 13px; /* Example size for h3 */
             }
             p {
-                font-size: 10px; /* Example size for paragraph text */
+                font-size: 13px; /* Example size for paragraph text */
             }
 
             /* Optional: Set text color for better readability */
