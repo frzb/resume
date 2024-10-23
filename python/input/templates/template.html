@@ -10,7 +10,7 @@
     <style>
         @media print {
             /* Remove the background and shadow for printing */
-            body, .max-w-4xl, .list-disc  {
+            body, .max-w-4xl  {
                 background: white !important; /* Ensure the background is white */
                 box-shadow: none !important; /* Remove shadow */
                 margin-top: 0 !important; /* Remove top margin */
@@ -18,11 +18,17 @@
                 line-height: 135% !important;
             }
 
+            ul.list-disc {
+                font-size: 13px !important;
+                line-height: 135% !important;
+                margin-top: 0 !important;
+                text-black;
+            }
             .text-4xl {
-                font-size: 32px
+                font-size: 32px;
             }
             .ml-8 {
-                font-size: 15px
+                font-size: 15px;
             }
 
              /* Adjust specific font sizes for printing */
@@ -40,6 +46,7 @@
             }
 
             /* Optional: Set text color for better readability */
+            .text-gray-700,
             .text-gray-800,
             .text-gray-600 {
                 color: black !important; /* Change text color to black */
