@@ -106,7 +106,7 @@
 
                             <!-- Job Dates on the right -->
                             <p class="text-gray-600 text-base">
-                                {{ job.startDate }}–{{ job.endDate }}
+                                {{ job.startDate }} – {{ job.endDate }}
                             </p>
                         </div>
 
@@ -121,6 +121,7 @@
                 {% endfor %}
             </ul>
         </section>
+
         <!-- Education Section -->
         <section class="mt-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
@@ -150,9 +151,22 @@
             </ul>
         </section>
 
-           <!-- Additional sections omitted for brevity (volunteer, education, awards, certificates, projects) -->
-
-    </div>
-</body>
-</html>
+        <!-- Skills Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
+            <ul class="space-y-4">
+                {% for skill in skills %}
+                <li>
+                    <h3 class="text-lg font-bold text-gray-800">{{ skill.name }}</h3>
+                    <ul class="flex flex-wrap space-x-3 space-y-2 mt-1">
+                        {% for keyword in skill.keywords %}
+                        <li class="bg-gray-200 text-gray-800 px-3 py-1 rounded-lg text-sm font-semibold">
+                            {{ keyword }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
 
