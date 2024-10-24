@@ -15,6 +15,7 @@ pytailwindcss = "^0.2.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
+j2lint = "^1.1.0"
 
 [build-system]
 requires = ["poetry-core"]
