@@ -68,7 +68,7 @@
     },
     {
       "position": "DevOps Engineer",
-      "name": "CLOUD&HEAT",
+      "name": "Cloud&Heat",
       "location": "***REMOVED***, Germany",
       "startDate": "04/2014",
       "endDate": "10/2019",
@@ -120,14 +120,13 @@
     {
       "institution": "Berufsfachschule für Wirtschaft und Technik des TÜV Rheinland",
       "location": "***REMOVED***, Germany",
-      "area": "Information Technology",
-      "studyType": "National Certified Assistant",
+      "area": "State-certified technician for information and communication technology",
       "startDate": "2007",
       "endDate": "2009"
     },
     {
       "institution": "Technical University ***REMOVED***",
-      "location": "***REMOVED***, Germany",
+      "location": "Germany",
       "area": "Mechatronics",
       "studyType": "No degree",
       "startDate": "2004",
@@ -135,7 +134,7 @@
     },
     {
       "institution": "University of Applied Sciences Landshut",
-      "location": "Landshut, Germany",
+      "location": "Germany",
       "area": "Mechanical Engineering",
       "studyType": "No degree",
       "startDate": "2003",
@@ -143,11 +142,10 @@
     },
     {
       "institution": "Berufliches Schulzentrum für Technik Zittau",
-      "location": "Zittau, Germany",
-      "area": "General Education",
-      "studyType": "Abitur (High School Exam)",
-      "startDate": "2003",
-      "endDate": "2000"
+      "location": "Germany",
+      "area": "Abitur (High School Exam)",
+      "startDate": "2000",
+      "endDate": "2003"
     }
   ],
   "skills": [

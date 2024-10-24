@@ -605,6 +605,10 @@ video {
   margin-left: 2rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
 }
