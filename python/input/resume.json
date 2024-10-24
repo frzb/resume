@@ -148,6 +148,10 @@
       "endDate": "2003"
     }
   ],
+  "skillss": [
+    {"name": 1 },
+    {"name": 2 }
+  ],
   "skills": [
     {
       "name": "Operating Systems",

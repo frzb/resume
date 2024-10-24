@@ -154,19 +154,47 @@
         <!-- Skills Section -->
         <section class="mt-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
-            <ul class="space-y-4">
-                {% for skill in skills %}
-                <li>
-                    <h3 class="text-lg font-bold text-gray-800">{{ skill.name }}</h3>
-                    <ul class="flex flex-wrap space-x-3 space-y-2 mt-1">
-                        {% for keyword in skill.keywords %}
-                        <li class="bg-gray-200 text-gray-800 px-3 py-1 rounded-lg text-sm font-semibold">
-                            {{ keyword }}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
+            
 
+            {% set middle = (skills | length + 1) // 2 %}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {% for skill in skills %}
+                {% if loop.index <= middle %}
+                <!-- Left Column -->
+                <div>
+                    <table class="w-full text-left text-sm">
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold text-gray-800 pr-4">{{ skill.name }}</td>
+                                <td class="text-gray-700">
+                                    {% for keyword in skill.keywords %}
+                                    {{ keyword }}{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <!-- Right Column -->
+                <div>
+                    <table class="w-full text-right text-sm">
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold text-gray-800 pr-4">{{ skill.name }}</td>
+                                <td class="text-gray-700">
+                                    {% for keyword in skill.keywords %}
+                                    {{ keyword }}{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+
+        </section>
