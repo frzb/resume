@@ -25,19 +25,14 @@
       "location": "***REMOVED***, Germany",
       "startDate": "08/2021",
       "endDate": "now",
-      "summary": "Responsible for all aspects IT: strategy, infrastructure, services, software development,  operations and security.",
+      "summary": "Responsible for all aspects of corporate  IT: strategy, infrastructure, services, software development, operations and security.",
       "highlights": [
-        "Build-up and leading a 5-member IT team plus freelancers on various projects to enhance team capabilities and project delivery.",
-        "Introduced agile development methodologies and established automated CI/CD pipelines with trunk-based development, reducing cycle time by a factor of 2.",
-
+        "Build-up and leading a 5-member IT team, managed freelancers on various projects.",
+        "Introduced agile development and operations methodologies. Established automated CI/CD pipelines with trunk-based development, reducing cycle time by a factor of 2.",
         "Designed and implemented software architecture for reverse logistics programs focused on recycling plastic toys for multinational toy and baby product companies, integrating with the corporate website via a REST API.",
-
-
-
-        "Developed a Bluetooth-WebSocket bridge service for a handheld proprietary X-ray fluorescence device,  inorganic impurities in recycled plastic toys and power tool housings.",
-        "Collected millions of data points, empowering corporate clients to make data-driven decisions on recycled plastic usage in new products.",
-
-        "Implemented open-source ERP software (ERPNext), adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application fragmentation."
+        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings. Empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
+        "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
+        "Responsible for the establishing an ISMS to meet corporate and customer IT security and data protection compliance requirements."
       ]
     },
     {
@@ -48,10 +43,10 @@
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
-        "Migrated storage from NFS to Ceph distributed storage.",
-        "Implemented horizontal scaling and transformed the legacy PHP application to a container-based infrastructure.",
-        "Automated platform code deployment via CI/CD pipelines.",
-        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana."
+        "Migrated storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
+        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructue enabling horizontal scaling with seamless platform code roll-outs.",
+        "Automated platform code deployment via CI/CD pipelines improving software QA, developer experience and time spent by developers for crowdfunding platform updates",
+        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing improved business intelligence capabilities."
       ]
     },
     {
@@ -62,7 +57,7 @@
       "endDate": "09/2022",
       "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
       "highlights": [
-        "Architected and developed the Coinboot framework for diskless computing optimized for blockchain hashing.",
+        "Created the Coinboot framework for diskless computing optimized for blockchain hashing.",
         "Presented recorded talks and further details on the project at https://coinboot.io."
       ]
     },
@@ -156,7 +151,7 @@
     {
       "name": "Operating Systems",
       "keywords": [
-        "GNU/Linux (Debian, Ubuntu, SUSE, CentOS)",
+        "GNU/Linux (Debian, Ubuntu, SLES, CentOS)",
         "BSD (OpenBSD, FreeBSD)"
       ]
     },
@@ -172,7 +167,7 @@
       "name": "Configuration Management",
       "keywords": [
         "Ansible",
-        "Puppet"
+        "Chef"
       ]
     },
     {
@@ -192,7 +187,8 @@
     {
       "name": "CI/CD",
       "keywords": [
-        "GitLab",
+        "GitLab CI",
+        "GitHub Actions",
         "Travis CI"
       ]
     },
@@ -203,12 +199,17 @@
         "SQLite"
       ]
     },
+   {
+      "name": "NoSQL",
+      "keywords": [
+        "MongoDB"
+      ]
+    },
     {
       "name": "Web Servers",
       "keywords": [
         "Nginx",
-        "Apache HTTP Server",
-        "Apache Tomcat"
+        "Apache HTTP Server"
       ]
     },
     {
@@ -229,8 +230,7 @@
     {
       "name": "Directory Services",
       "keywords": [
-        "OpenLDAP",
-        "Microsoft AD LDS"
+        "OpenLDAP"
       ]
     },
     {
@@ -270,8 +270,9 @@
     {
       "name": "Monitoring",
       "keywords": [
+        "Netdata",
+        "Telegraf",
         "Prometheus",
-        "Nagios",
         "Check_MK"
       ]
     },
@@ -279,7 +280,9 @@
       "name": "Packet Filter/Firewall",
       "keywords": [
         "Iptables",
-        "pf (OpenBSD/FreeBSD)"
+        "nftables",
+        "UFW",
+        "pf"
       ]
     },
     {
@@ -304,10 +307,10 @@
         "NFS",
         "ZFS",
         "Samba",
-        "Swift",
-        "Netapp Data Ontap",
+        "OpenStack Swift",
         "GlusterFS",
-        "DRBD"
+        "DRBD",
+        "Amazon S3"
       ]
     },
     {
@@ -319,26 +322,25 @@
     {
       "name": "Version Control",
       "keywords": [
-        "Git",
-        "Subversion"
+        "Git"
       ]
     },
     {
       "name": "Virtualization",
       "keywords": [
         "KVM",
-        "Xen",
-        "Virtualbox",
         "libvirt/virsh",
-        "Vagrant"
+        "VirtualbBox",
+        "Vagrant",
+        "Xen"
       ]
     },
     {
       "name": "VPN",
       "keywords": [
+        "WireGuard",
         "OpenVPN",
-        "IPsec (OpenBSD)",
-        "WireGuard"
+        "IPsec (OpenBSD)"
       ]
     }
   ],

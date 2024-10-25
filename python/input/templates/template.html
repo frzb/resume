@@ -5,68 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ basics.name }} - Resume</title>
+
+    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="../static/css/tailwind.css" rel="stylesheet">
+
     <style>
         @media print {
-            /* Remove the background and shadow for printing */
-            body, .max-w-4xl  {
-                background: white !important; /* Ensure the background is white */
-                box-shadow: none !important; /* Remove shadow */
-                margin-top: 0 !important; /* Remove top margin */
+            /* Print-specific styles */
+            body, .max-w-4xl {
+                background: white !important;
+                box-shadow: none !important;
+                margin-top: 0 !important;
                 font-size: 13px !important;
-                line-height: 135% !important;
+                line-height: 1.35 !important;
             }
 
             ul.list-disc {
                 font-size: 13px !important;
-                line-height: 135% !important;
-                margin-top: 0 !important;
-                text-black;
-            }
-            .text-4xl {
-                font-size: 32px;
-            }
-            .ml-8 {
-                font-size: 15px;
+                line-height: 1.35 !important;
+                color: black !important;
             }
 
-             /* Adjust specific font sizes for printing */
-            h1 {
-                font-size: 16px; /* Example size for h1 */
-            }
-            h2 {
-                font-size: 15px; /* Example size for h2 */
-            }
-            h3 {
-                font-size: 13px; /* Example size for h3 */
-            }
-            p {
-                font-size: 13px; /* Example size for paragraph text */
+            .text-4xl { font-size: 32px; }
+            .ml-8 { font-size: 15px; }
+
+            /* Adjust font sizes */
+            h1 { font-size: 16px; }
+            h2 { font-size: 15px; }
+            h3, p { font-size: 13px; }
+
+            /* Set text color to black for print */
+            .text-gray-700, .text-gray-800, .text-gray-600 {
+                color: black !important;
             }
 
-            /* Optional: Set text color for better readability */
-            .text-gray-700,
-            .text-gray-800,
-            .text-gray-600 {
-                color: black !important; /* Change text color to black */
-            }
-
-            /* Hide elements you don't want to print */
-            .no-print {
-                display: none !important;
-            }
+            /* Hide elements in print */
+            .no-print { display: none !important; }
         }
     </style>
 </head>
-<body class="bg-gray-100 font-ubuntu font-thin">
 
-    <!-- Main container -->
-    <!-- Hide background when printing -->
+<body class="bg-gray-100 font-ubuntu font-thin">
+    <!-- Main Container -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
 
 
-        <!-- Header -->
+    <!-- Header -->
         <div class="flex justify-end">
             <header class="pb-0 mb-0">
                 <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
@@ -91,28 +76,14 @@
                 {% for job in work %}
                     <li>
                         <div class="flex justify-between items-center">
-                            <!-- Job Title and Company on the left -->
                             <h3 class="text-lg font-bold text-gray-800">
-                                {{ job.position }}
-                                {% if job.name %}
-                                    <span class="font-normal"> | </span>{{ job.name }}
-                                {% endif %}
-                                {% if job.location %}
-                                    <span class="text-lg text-gray-800 font-normal">
-                                        | {{ job.location }}
-                                    </span>
-                                {% endif %}
+                                {{ job.position }}{% if job.name %} | {{ job.name }}{% endif %}
+                                {% if job.location %} | {{ job.location }}{% endif %}
                             </h3>
-
-                            <!-- Job Dates on the right -->
-                            <p class="text-gray-600 text-base">
-                                {{ job.startDate }} – {{ job.endDate }}
-                            </p>
+                            <p class="text-gray-600 text-base">{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
-
-                        <!-- <h3 class="text-lg font-bold text-gray-800">{{ job.position }} at {{ job.name }}, {{ job.location }} </h3> <p class="text-gray-500 text-sm">{{ job.startDate }} - {{ job.endDate }}</p> -->
                         <p class="text-gray-700 text-base font-bold leading-relaxed">{{ job.summary }}</p>
-                        <ul class="list-disc list-outside ms-4 mt-2 text-gray-700 text-base space-y-2">
+                        <ul class="list-disc list-outside ml-4 mt-2 text-gray-700 text-base space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
                             {% endfor %}
@@ -127,26 +98,17 @@
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
             <ul class="space-y-6">
                 {% for degree in education %}
-                <li class="flex justify-between items-center">
-                    <!-- Left content: Degree, Institution, Location -->
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-800">{{ degree.area }}</h3>
-                        <p class="text-gray-700 text-base font-bold leading-relaxed">
-                            {{ degree.institution }}, {{ degree.location }}
-                            {% if degree.studyType %}
-                                <span class="text-base text-gray-800 font-normal">
-                                    | {{ degree.studyType }}
-                                </span>
-                            {% endif %}
-                        </p>
-                    </div>
-                    <!-- Right content: Dates -->
-                    <div class="ml-auto">
-                        <p class="text-gray-600 text-base">
-                            {{ degree.startDate }} – {{ degree.endDate }}
-                        </p>
-                    </div>
-                </li>
+                    <li class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">{{ degree.area }}</h3>
+                            <p class="text-gray-700 text-base font-bold leading-relaxed">
+                                {{ degree.institution }}, {{ degree.location }}{% if degree.studyType %} | {{ degree.studyType }}{% endif %}
+                            </p>
+                        </div>
+                        <div class="ml-auto">
+                            <p class="text-gray-600 text-base">{{ degree.startDate }} – {{ degree.endDate }}</p>
+                        </div>
+                    </li>
                 {% endfor %}
             </ul>
         </section>
@@ -154,44 +116,26 @@
         <!-- Skills Section -->
         <section class="mt-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
-
-            {% set middle = (skills | length + 1) // 2 %}
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
                 {% for skill in skills %}
-                {% if loop.index <= middle %}
-                <!-- Left Column -->
-                <div>
-                    <table class="w-full text-left text-sm leading-tight">
-                        <tbody>
-                            <tr>
-                                <td class="font-semibold text-gray-800 pr-4 px-2 py-0">{{ skill.name }}</td>
-                                <td class="text-gray-700 text-right px-2 py-0">
-                                    {% for keyword in skill.keywords %}
-                                    {{ keyword }}{% if not loop.last %}, {% endif %}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                {% else %}
-                <!-- Right Column -->
-                <div>
-                    <table class="w-full text-left text-sm">
-                        <tbody>
-                            <tr>
-                                <td class="font-semibold text-gray-800 pr-4 px-2 py-0">{{ skill.name }}</td>
-                                <td class="text-gray-700 text-right px-2 py-0">
-                                    {% for keyword in skill.keywords %}
-                                    {{ keyword }}{% if not loop.last %}, {% endif %}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                {% endif %}
+                    <div>
+                        <table class="w-full text-sm leading-tight">
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold text-gray-800 pr-4 px-2 py-0">{{ skill.name }}</td>
+                                    <td class="text-gray-700 text-right px-2 py-0">
+                                        {% for keyword in skill.keywords %}
+                                            {{ keyword }}{% if not loop.last %}, {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 {% endfor %}
             </div>
         </section>
+
+    </div>
+</body>
+</html>
