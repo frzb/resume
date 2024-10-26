@@ -50,24 +50,31 @@
     <!-- Main Container -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
 
+        <!-- Container for Header and Summary -->
+        <div class="flex">
 
-    <!-- Header -->
-        <div class="flex justify-end">
-            <header class="pb-0 mb-0">
-                <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
-                <p class="text-xl font-light text-gray-600">{{ basics.label }}</p>
-                <p class="ml-8 text-gray-600">{{ basics.location.address }}</p>
-                <p class="ml-8 text-gray-600"> {{ basics.location.postalCode }} {{ basics.location.city }}</p>
-                <p class="ml-8 text-gray-600">E-Mail: {{ basics.email }}</p>
-                <p class="ml-8 text-gray-600"> Phone: {{ basics.phone }}</p>
-                <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
-            </header>
+            <!-- Summary Section -->
+            <div class="w-2/3 flex items-center text-left">
+                <section>
+                    <p class="text-gray-800 text-base font-bold italic leading-relaxed" style="white-space: pre-wrap;">{{ basics.summary }}</p>
+                </section>
+            </div>
+
+            <!-- Header Section -->
+            <div class="w-1/3 text-right">
+                <header class="pb-0 mb-0">
+                    <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
+                    <p class="text-xl font-light text-gray-600">{{ basics.label }}</p>
+                    <p class="ml-8 text-gray-600">{{ basics.location.address }}</p>
+                    <p class="ml-8 text-gray-600">{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                    <p class="ml-8 text-gray-600">E-Mail: {{ basics.email }}</p>
+                    <p class="ml-8 text-gray-600">Phone: {{ basics.phone }}</p>
+                    <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
+                </header>
+            </div>
+
+
         </div>
-
-        <!-- Summary Section -->
-        <section>
-            <p class="text-gray-700 text-lg leading-relaxed">{{ basics.summary }}</p>
-        </section>
 
         <!-- Work Experience Section -->
         <section class="mt-8">

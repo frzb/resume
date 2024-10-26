@@ -1,5 +1,6 @@
 {
   "basics": {
+    "summary": "Experienced, people-oriented IT generalist and creative thinker \n with 15 years in operations, infrastructure and software engineering ",
     "name": "Gunter Miegel",
     "email": "gunter.miegel@coinboot.io",
     "phone": "***REMOVED***",
@@ -32,7 +33,7 @@
         "Designed and implemented software architecture for reverse logistics programs focused on recycling plastic toys for multinational toy and baby product companies, integrating with the corporate website via a REST API.",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings. Empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
         "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
-        "Responsible for the establishing an ISMS to meet corporate and customer IT security and data protection compliance requirements."
+        "Responsible for establishing an ISMS to meet corporate and customer IT security and data protection compliance requirements."
       ]
     },
     {
@@ -159,8 +160,8 @@
       "name": "Programming Languages",
       "keywords": [
         "Bash/Shell",
-        "Ruby",
-        "Python"
+        "Python",
+        "Ruby"
       ]
     },
     {
@@ -253,7 +254,7 @@
       ]
     },
     {
-      "name": "Load Balancing/Reverse Proxy",
+      "name": "Load Balancer/Reverse Proxy",
       "keywords": [
         "Traefik",
         "HAProxy"
@@ -279,10 +280,11 @@
     {
       "name": "Packet Filter/Firewall",
       "keywords": [
-        "Iptables",
+        "iptables",
         "nftables",
-        "UFW",
-        "pf"
+        "OPNSense",
+        "pf",
+        "UFW"
       ]
     },
     {
@@ -292,12 +294,18 @@
       ]
     },
     {
-      "name": "Social Coding",
+      "name": "Source Code Management",
       "keywords": [
         "GitHub",
         "GitLab",
         "BitBucket",
         "Gitea"
+      ]
+    },
+    {
+      "name": "Version Control",
+      "keywords": [
+        "Git"
       ]
     },
     {
@@ -317,12 +325,6 @@
       "name": "TSDB",
       "keywords": [
         "InfluxDB"
-      ]
-    },
-    {
-      "name": "Version Control",
-      "keywords": [
-        "Git"
       ]
     },
     {
