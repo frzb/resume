@@ -559,10 +559,6 @@ video {
   margin-right: auto;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -573,10 +569,6 @@ video {
 
 .ml-8 {
   margin-left: 2rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mt-10 {
@@ -639,8 +631,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-0 {
-  gap: 0px;
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -683,16 +675,8 @@ video {
   padding-bottom: 0px;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
 .pr-4 {
   padding-right: 1rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-right {
