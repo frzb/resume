@@ -30,10 +30,10 @@
       "highlights": [
         "Build-up and leading a 5-member IT team, managed freelancers on various projects.",
         "Introduced agile development and operations methodologies. Established automated CI/CD pipelines with trunk-based development, reducing cycle time by a factor of 2.",
-        "Designed and implemented software architecture for reverse logistics programs focused on recycling plastic toys for multinational toy and baby product companies, integrating with the corporate website via a REST API.",
+        "Designed reverse logistics software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex logistic processes into customer company websites over API ",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings. Empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
         "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
-        "Responsible for establishing an ISMS to meet corporate and customer IT security and data protection compliance requirements."
+        "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
       ]
     },
     {
@@ -45,9 +45,9 @@
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
         "Migrated storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
-        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructue enabling horizontal scaling with seamless platform code roll-outs.",
+        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs.",
         "Automated platform code deployment via CI/CD pipelines improving software QA, developer experience and time spent by developers for crowdfunding platform updates",
-        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing improved business intelligence capabilities."
+        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also enabling better business intelligence capabilities."
       ]
     },
     {
@@ -103,13 +103,13 @@
       "organization": "Mobile Jugendarbeit ***REMOVED***-Süd e. V.",
       "position": "IT Infrastructure Consultant",
       "startDate": "2010",
-      "summary": "Provided IT infrastructure consulting and support for mobile youth work."
+      "summary": "Provided IT consulting and support for outreach youth work."
     },
     {
       "organization": "Coding Courses for Grade Schoolers",
       "position": "Instructor",
       "startDate": "2019",
-      "summary": "Conducted coding courses for young students."
+      "summary": "Providing school children a first contact with coding and engineering"
     }
   ],
   "education": [
@@ -144,10 +144,6 @@
       "endDate": "2003"
     }
   ],
-  "skillss": [
-    {"name": 1 },
-    {"name": 2 }
-  ],
   "skills": [
     {
       "name": "Operating Systems",
@@ -172,6 +168,12 @@
       ]
     },
     {
+      "name": "Infrastructure as Code",
+      "keywords": [
+        "Terraform"
+      ]
+    },
+    {
       "name": "Container Technology",
       "keywords": [
         "Docker",
@@ -183,6 +185,12 @@
       "name": "Dashboards and Analytics",
       "keywords": [
         "Grafana"
+      ]
+    },
+    {
+      "name": "Enterprise resource planning",
+      "keywords": [
+        "ERPNext"
       ]
     },
     {
@@ -261,7 +269,7 @@
       ]
     },
     {
-      "name": "Mail - MTA/MDA",
+      "name": "E-Mail (MTA, MDA)",
       "keywords": [
         "Exim",
         "Postfix",
@@ -342,7 +350,7 @@
       "keywords": [
         "WireGuard",
         "OpenVPN",
-        "IPsec (OpenBSD)"
+        "IPsec"
       ]
     }
   ],
