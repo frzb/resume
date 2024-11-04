@@ -16,29 +16,44 @@
                 margin-top: 1cm;
             }
 
+
             body, .max-w-4xl {
                 background: white !important;
                 box-shadow: none !important;
+                padding: 12px !important; 
                 margin-top: 0 !important;
-                font-size: 13px !important;
-                line-height: 1.35 !important;
+                font-size: 9px !important;
+                h1 { font-size: 32px; }
+                h2 { font-size: 16px; }
+                h3, p { font-size: 16px; }
+                p { font-size: 14px; }
+                line-height: 1.25 !important;
+            }
+
+            tbody, td {
+                font-size: 9px;
+            }
+
+            .mt-8 {
+                margin-top: 0rem !important;
             }
 
             ul.list-disc {
-                font-size: 13px !important;
-                line-height: 1.35 !important;
+                font-size: 14px !important;
+                line-height: 1.25 !important;
                 color: black !important;
             }
 
             .text-4xl { font-size: 32px; }
-            .ml-8 { font-size: 15px; }
-            h1 { font-size: 16px; }
-            h2 { font-size: 15px; }
-            h3, p { font-size: 13px; }
+            .ml-8 { font-size: 12px; }
             .text-gray-700, .text-gray-800, .text-gray-600 {
                 color: black !important;
             }
             .no-print { display: none !important; }
+
+            h1 {
+                white-space: nowrap;
+            }
 
             /* Prevent list items from splitting across pages */
             li {
@@ -60,8 +75,8 @@
         <div class="flex">
 
             <!-- Summary Section -->
-            <summary class="w-2/3 flex items-center">
-                <p class="text-gray-800 text-base font-bold italic leading-relaxed" style="white-space: pre-wrap;">
+            <summary class="w-2/3 flex justify-start items-right">
+                <p class="text-gray-800 text-base font-bold italic" style="white-space: pre-wrap;">
                     {{ basics.summary }}
                 </p>
             </summary>
