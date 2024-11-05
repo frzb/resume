@@ -178,15 +178,17 @@
 
         <!-- Language Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-2">Languages</h2>
-            <ul class="grid gap-4 sm:grid-cols-2">
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Languages</h2>
+            <div class="grid-container">
                 {% for language in languages %}
-                <li class="language-item">
-                    <span class="text-lg font-bold text-slate-800">{{ language.language }}</span>
-                    <span class="text-slate-700 text-base font-bold ml-2">{{ language.fluency }}</span>
-                </li>
+                <div class="grid-item">
+                    <div class="flex items-center justify-between p-2">
+                        <span class="font-semibold text-slate-800 pr-4">{{ language.language }}</span>
+                        <span class="text-slate-700 text-right">{{ language.fluency }}</span>
+                    </div>
+                </div>
                 {% endfor %}
-            </ul>
+            </div>
         </section>
 
     </div>
