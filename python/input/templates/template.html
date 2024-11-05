@@ -11,6 +11,23 @@
     <link href="../static/css/tailwind.css" rel="stylesheet">
 
     <style>
+
+    .language-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: grid; /* Define a grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        gap: 0.5rem; /* Space between grid items */
+    }
+
+    .grid-item {
+        padding: 1px; /* Padding for each item */
+        border-bottom: 1px solid #ddd; /* Optional border for clarity */
+    }
+
     @media print {
         @page {
             size: A4;
@@ -22,7 +39,7 @@
             background: none !important;
             box-shadow: none !important;
             padding: 9pt !important;
-            font-size: 7pt !important;
+            font-size: 9pt !important;
             line-height: 1.25 !important;
         }
 
@@ -121,24 +138,38 @@
             </ul>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section
         <section class="mt-8">
             <h2 class="text-2xl font-semibold text-slate-800 mb-1">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                 {% for skill in skills %}
-                    <div>
-                        <table class="w-full text-sm leading-tight">
-                            <tbody>
-                                <tr>
-                                    <td class="font-semibold text-slate-800 pr-4 px-2 py-0">{{ skill.name }}</td>
-                                    <td class="text-slate-700 text-right px-2 py-0">
-                                        {% for keyword in skill.keywords %}
-                                            {{ keyword }}{% if not loop.last %}, {% endif %}
-                                        {% endfor %}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="flex items-center justify-between p-2">
+                        <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
+                        <span class="text-slate-700 text-right">
+                            {% for keyword in skill.keywords %}
+                                {{ keyword }}{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </span>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        -->
+
+        <!-- Skills Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Skills</h2>
+            <div class="grid-container">
+                {% for skill in skills %}
+                    <div class="grid-item">
+                        <div class="flex items-center justify-between p-2">
+                            <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
+                            <span class="text-slate-700 text-right">
+                                {% for keyword in skill.keywords %}
+                                    {{ keyword }}{% if not loop.last %}, {% endif %}
+                                {% endfor %}
+                            </span>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
@@ -150,7 +181,7 @@
             <h2 class="text-2xl font-semibold text-slate-800 mb-2">Languages</h2>
             <ul class="grid gap-4 sm:grid-cols-2">
                 {% for language in languages %}
-                <li>
+                <li class="language-item">
                     <span class="text-lg font-bold text-slate-800">{{ language.language }}</span>
                     <span class="text-slate-700 text-base font-bold ml-2">{{ language.fluency }}</span>
                 </li>
