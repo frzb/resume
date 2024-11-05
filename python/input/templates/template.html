@@ -14,7 +14,7 @@
     @media print {
         @page {
             size: A4;
-            margin: 1cm;
+            margin: 0.3cm;
         }
 
         /* Page-specific padding and formatting */
@@ -30,10 +30,10 @@
 
         /* Font sizes */
         h1 { font-size: 24pt; }
-        h2 { font-size: 12pt; }
-        h3, p { font-size: 10.5pt; }
+        h2 { font-size: 11pt; }
+        h3, p { font-size: 10pt; }
         tbody, td { font-size: 7pt; }
-        ul.list-disc { font-size: 10.5pt; }
+        ul.list-disc { font-size: 10pt; }
 
         /* Utility classes */
         .text-4xl { font-size: 24pt; }
@@ -63,14 +63,14 @@
         <div class="flex">
 
             <!-- Summary Section -->
-            <summary class="w-2/3 flex justify-start items-right">
+            <summary class="flex-1 flex justify-start items-right">
                 <p class="text-gray-800 text-base font-bold italic" style="white-space: pre-wrap;">
                     {{ basics.summary }}
                 </p>
             </summary>
 
             <!-- Header Section -->
-            <header class="w-1/3 text-right">
+            <header class="flex-shrink-0 text-right">
                 <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
                 <p class="text-xl font-light text-gray-600">{{ basics.label }}</p>
                 <p class="text-gray-600">{{ basics.location.address }}</p>
@@ -83,7 +83,7 @@
 
         <!-- Work Experience Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Work Experience</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Work Experience</h2>
             <ul class="space-y-4">
                 {% for job in work %}
                     <li>
@@ -94,8 +94,8 @@
                             </h3>
                             <p class="text-gray-600 text-base">{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
-                        <p class="text-gray-700 text-base font-bold leading-relaxed">{{ job.summary }}</p>
-                        <ul class="list-disc list-outside ml-4 mt-2 text-gray-700 text-base space-y-2">
+                        <p class="text-gray-700 text-base font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
+                        <ul class="list-disc list-outside ml-4 mt-0 text-gray-700 text-base space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
                             {% endfor %}
@@ -107,7 +107,7 @@
 
         <!-- Education Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Education</h2>
             <ul class="space-y-4">
                 {% for degree in education %}
                     <li class="flex justify-between items-center">
@@ -126,7 +126,7 @@
 
         <!-- Skills Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                 {% for skill in skills %}
                     <div>
@@ -150,7 +150,7 @@
 
         <!-- Language Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Languages</h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Languages</h2>
             <ul class="grid gap-4 sm:grid-cols-2">
                 {% for language in languages %}
                 <li>
