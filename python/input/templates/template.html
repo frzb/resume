@@ -18,8 +18,8 @@
         }
 
         /* Page-specific padding and formatting */
-        body {
-            background: white !important;
+        body, .max-w-4xl {
+            background: none !important;
             box-shadow: none !important;
             padding: 9pt !important;
             font-size: 7pt !important;
@@ -38,9 +38,6 @@
         /* Utility classes */
         .text-4xl { font-size: 24pt; }
         .ml-8 { font-size: 9pt; }
-        .text-gray-700, .text-gray-800, .text-gray-600 {
-            color: black !important;
-        }
         .no-print { display: none !important; }
 
         /* Element alignment and spacing */
@@ -54,7 +51,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 font-ubuntu font-thin">
+<body class="bg-gray-100 font-ubuntu font-normal">
 
     <!-- Main Container -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
