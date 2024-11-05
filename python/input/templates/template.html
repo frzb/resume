@@ -51,7 +51,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 font-ubuntu font-normal">
+<body class="bg-slate-100 font-ubuntu font-normal">
 
     <!-- Main Container -->
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
@@ -61,38 +61,38 @@
 
             <!-- Summary Section -->
             <summary class="flex-1 flex justify-start items-right">
-                <p class="text-gray-800 text-base font-bold italic" style="white-space: pre-wrap;">
+                <p class="text-slate-800 text-base font-bold italic" style="white-space: pre-wrap;">
                     {{ basics.summary }}
                 </p>
             </summary>
 
             <!-- Header Section -->
             <header class="flex-shrink-0 text-right">
-                <h1 class="text-4xl font-bold text-gray-800">{{ basics.name }}</h1>
-                <p class="text-xl font-light text-gray-600">{{ basics.label }}</p>
-                <p class="text-gray-600">{{ basics.location.address }}</p>
-                <p class="text-gray-600">{{ basics.location.postalCode }} {{ basics.location.city }}</p>
-                <p class="text-gray-600">E-Mail: {{ basics.email }}</p>
-                <p class="text-gray-600">Phone: {{ basics.phone }}</p>
+                <h1 class="text-4xl font-bold text-slate-800">{{ basics.name }}</h1>
+                <p class="text-xl font-light text-slate-600">{{ basics.label }}</p>
+                <p class="text-slate-600">{{ basics.location.address }}</p>
+                <p class="text-slate-600">{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                <p class="text-slate-600">E-Mail: {{ basics.email }}</p>
+                <p class="text-slate-600">Phone: {{ basics.phone }}</p>
                 <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
             </header>
         </div>
 
         <!-- Work Experience Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Work Experience</h2>
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Work Experience</h2>
             <ul class="space-y-4">
                 {% for job in work %}
                     <li>
                         <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-bold text-gray-800">
+                            <h3 class="text-lg font-bold text-slate-800">
                                 {{ job.position }}{% if job.name %} | {{ job.name }}{% endif %}
                                 {% if job.location %} | {{ job.location }}{% endif %}
                             </h3>
-                            <p class="text-gray-600 text-base">{{ job.startDate }} – {{ job.endDate }}</p>
+                            <p class="text-slate-600 text-base">{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
-                        <p class="text-gray-700 text-base font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
-                        <ul class="list-disc list-outside ml-4 mt-0 text-gray-700 text-base space-y-2">
+                        <p class="text-slate-700 text-base font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
+                        <ul class="list-disc list-outside ml-4 mt-0 text-slate-700 text-base space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
                             {% endfor %}
@@ -104,18 +104,18 @@
 
         <!-- Education Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Education</h2>
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Education</h2>
             <ul class="space-y-4">
                 {% for degree in education %}
                     <li class="flex justify-between items-center">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800">{{ degree.area }}</h3>
-                            <p class="text-gray-700 text-base font-bold leading-relaxed">
+                            <h3 class="text-lg font-bold text-slate-800">{{ degree.area }}</h3>
+                            <p class="text-slate-700 text-base font-bold leading-relaxed">
                                 {{ degree.institution }}, {{ degree.location }}
                                 {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
                             </p>
                         </div>
-                        <p class="text-gray-600 text-base">{{ degree.startDate }} – {{ degree.endDate }}</p>
+                        <p class="text-slate-600 text-base">{{ degree.startDate }} – {{ degree.endDate }}</p>
                     </li>
                 {% endfor %}
             </ul>
@@ -123,15 +123,15 @@
 
         <!-- Skills Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-1">Skills</h2>
+            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                 {% for skill in skills %}
                     <div>
                         <table class="w-full text-sm leading-tight">
                             <tbody>
                                 <tr>
-                                    <td class="font-semibold text-gray-800 pr-4 px-2 py-0">{{ skill.name }}</td>
-                                    <td class="text-gray-700 text-right px-2 py-0">
+                                    <td class="font-semibold text-slate-800 pr-4 px-2 py-0">{{ skill.name }}</td>
+                                    <td class="text-slate-700 text-right px-2 py-0">
                                         {% for keyword in skill.keywords %}
                                             {{ keyword }}{% if not loop.last %}, {% endif %}
                                         {% endfor %}
@@ -147,12 +147,12 @@
 
         <!-- Language Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Languages</h2>
+            <h2 class="text-2xl font-semibold text-slate-800 mb-2">Languages</h2>
             <ul class="grid gap-4 sm:grid-cols-2">
                 {% for language in languages %}
                 <li>
-                    <span class="text-lg font-bold text-gray-800">{{ language.language }}</span>
-                    <span class="text-gray-700 text-base font-bold ml-2">{{ language.fluency }}</span>
+                    <span class="text-lg font-bold text-slate-800">{{ language.language }}</span>
+                    <span class="text-slate-700 text-base font-bold ml-2">{{ language.fluency }}</span>
                 </li>
                 {% endfor %}
             </ul>
