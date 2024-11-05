@@ -6,7 +6,7 @@ import subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-
+from weasyprint import HTML
 
 class ResumeHandler(FileSystemEventHandler):
     def __init__(self):
@@ -30,6 +30,7 @@ class ResumeHandler(FileSystemEventHandler):
             self.load_data()
             self.render_template()
             self.tailwindcss_build()
+            HTML('./output/output_resume.html').write_pdf('./output/resume.pdf')
 
     def load_data(self):
         try:
@@ -42,7 +43,9 @@ class ResumeHandler(FileSystemEventHandler):
             print(f"Error loading data from {self.json_path}: {e}")
 
     def tailwindcss_build(self):
-        command = "poetry run tailwindcss -o static/css/tailwind.css"
+        # We needed to minify the Tailwiwind CSS file because
+        # Weasyprint has issues with parsing nested CSS comments
+        command = "poetry run tailwindcss --minify -o static/css/tailwind.css"
         try:
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
