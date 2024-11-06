@@ -88,11 +88,11 @@
             <!-- Header Section -->
             <header class="flex-shrink-0 text-right">
                 <h1>{{ basics.name }}</h1>
-                <p class="text-xl font-light text-slate-600">{{ basics.label }}</p>
-                <p class="text-slate-600">{{ basics.location.address }}</p>
-                <p class="text-slate-600">{{ basics.location.postalCode }} {{ basics.location.city }}</p>
-                <p class="text-slate-600">E-Mail: {{ basics.email }}</p>
-                <p class="text-slate-600">Phone: {{ basics.phone }}</p>
+                <p class="text-xl font-light text-slate-700">{{ basics.label }}</p>
+                <p>{{ basics.location.address }}</p>
+                <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                <p>E-Mail: {{ basics.email }}</p>
+                <p class="text-slate-700">Phone: {{ basics.phone }}</p>
                 <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
             </header>
         </div>
@@ -108,10 +108,10 @@
                                 {{ job.position }}{% if job.name %} | {{ job.name }}{% endif %}
                                 {% if job.location %} | {{ job.location }}{% endif %}
                             </h3>
-                            <p class="text-slate-600 text-base">{{ job.startDate }} – {{ job.endDate }}</p>
+                            <p>{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
-                        <p class="text-slate-700 text-base font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
-                        <ul class="list-disc list-outside ml-4 mt-0 text-slate-700 text-base space-y-2">
+                        <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
+                        <ul class="list-disc list-outside ml-4 mt-0 space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight }}</li>
                             {% endfor %}
@@ -129,12 +129,12 @@
                     <li class="flex justify-between items-center">
                         <div>
                             <h3>{{ degree.area }}</h3>
-                            <p class="text-slate-700 text-base font-bold leading-relaxed">
+                            <p class="font-bold leading-relaxed">
                                 {{ degree.institution }}, {{ degree.location }}
                                 {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
                             </p>
                         </div>
-                        <p class="text-slate-600 text-base">{{ degree.startDate }} – {{ degree.endDate }}</p>
+                        <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
                     </li>
                 {% endfor %}
             </ul>
@@ -147,7 +147,7 @@
                 {% for skill in skills %}
                     <div class="flex items-center justify-between p-2">
                         <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
-                        <span class="text-slate-700 text-right">
+                        <span class="text-right">
                             {% for keyword in skill.keywords %}
                                 {{ keyword }}{% if not loop.last %}, {% endif %}
                             {% endfor %}
@@ -166,7 +166,7 @@
                     <div class="grid-item">
                         <div class="flex items-center justify-between p-2">
                             <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
-                            <span class="text-slate-700 text-right">
+                            <span class="text-right">
                                 {% for keyword in skill.keywords %}
                                     {{ keyword }}{% if not loop.last %}, {% endif %}
                                 {% endfor %}
@@ -186,7 +186,7 @@
                 <div class="grid-item">
                     <div class="flex items-center justify-between p-2">
                         <span class="font-semibold text-slate-800 pr-4">{{ language.language }}</span>
-                        <span class="text-slate-700 text-right">{{ language.fluency }}</span>
+                        <span class="text-right">{{ language.fluency }}</span>
                     </div>
                 </div>
                 {% endfor %}
