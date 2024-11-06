@@ -45,7 +45,7 @@ class ResumeHandler(FileSystemEventHandler):
     def tailwindcss_build(self):
         # We needed to minify the Tailwiwind CSS file because
         # Weasyprint has issues with parsing nested CSS comments
-        command = "poetry run tailwindcss --minify -o static/css/tailwind.css"
+        command = "poetry run tailwindcss --minify -i input/css/input.css -o static/css/tailwind.css"
         try:
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
