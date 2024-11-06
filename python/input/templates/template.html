@@ -47,20 +47,22 @@
 
         /* Font sizes */
         h1 { font-size: 24pt; }
-        h2 { font-size: 11pt; }
-        h3, p { font-size: 10pt; }
-        tbody, td { font-size: 7pt; }
-        ul.list-disc { font-size: 10pt; }
+        h2 { font-size: 9pt; }
+        h3, p { font-size: 9pt; }
+        ul.list-disc { font-size: 9pt; }
 
         /* Utility classes */
-        .text-4xl { font-size: 24pt; }
-        .ml-8 { font-size: 9pt; }
+        .text-4xl { font-size: 20pt; }
+        .text-2xl { font-size: 12pt; }
+        .text-base { font-size: 12pt; }
+        .ml-8  font-size: 9pt; }
         .no-print { display: none !important; }
 
         /* Element alignment and spacing */
         h1 { white-space: nowrap; }
         .mt-8 { margin-top: 0 !important; }
         .mt-10 { margin-top: 0 !important; }
+        .mb-1 { margin-bottom: 0 !important; }
 
         /* Page-break management */
         li, div { break-inside: avoid; }
@@ -85,7 +87,7 @@
 
             <!-- Header Section -->
             <header class="flex-shrink-0 text-right">
-                <h1 class="text-4xl font-bold text-slate-800">{{ basics.name }}</h1>
+                <h1>{{ basics.name }}</h1>
                 <p class="text-xl font-light text-slate-600">{{ basics.label }}</p>
                 <p class="text-slate-600">{{ basics.location.address }}</p>
                 <p class="text-slate-600">{{ basics.location.postalCode }} {{ basics.location.city }}</p>
@@ -97,12 +99,12 @@
 
         <!-- Work Experience Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Work Experience</h2>
+            <h2>Work Experience</h2>
             <ul class="space-y-4">
                 {% for job in work %}
                     <li>
                         <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-bold text-slate-800">
+                            <h3>
                                 {{ job.position }}{% if job.name %} | {{ job.name }}{% endif %}
                                 {% if job.location %} | {{ job.location }}{% endif %}
                             </h3>
@@ -121,12 +123,12 @@
 
         <!-- Education Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Education</h2>
+            <h2>Education</h2>
             <ul class="space-y-4">
                 {% for degree in education %}
                     <li class="flex justify-between items-center">
                         <div>
-                            <h3 class="text-lg font-bold text-slate-800">{{ degree.area }}</h3>
+                            <h3>{{ degree.area }}</h3>
                             <p class="text-slate-700 text-base font-bold leading-relaxed">
                                 {{ degree.institution }}, {{ degree.location }}
                                 {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
@@ -140,7 +142,7 @@
 
         <!-- Skills Section
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Skills</h2>
+            <h2>Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                 {% for skill in skills %}
                     <div class="flex items-center justify-between p-2">
@@ -158,7 +160,7 @@
 
         <!-- Skills Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Skills</h2>
+            <h2>Skills</h2>
             <div class="grid-container">
                 {% for skill in skills %}
                     <div class="grid-item">
@@ -178,7 +180,7 @@
 
         <!-- Language Section -->
         <section class="mt-8">
-            <h2 class="text-2xl font-semibold text-slate-800 mb-1">Languages</h2>
+            <h2>Languages</h2>
             <div class="grid-container">
                 {% for language in languages %}
                 <div class="grid-item">
