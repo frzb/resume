@@ -12,20 +12,15 @@
 
     <style>
 
-    .language-item {
-        display: flex;
-        align-items: center;
-    }
-
     .grid-container {
-        display: grid; /* Define a grid layout */
-        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-        gap: 0.5rem; /* Space between grid items */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
 
     .grid-item {
-        padding: 1px; /* Padding for each item */
-        border-bottom: 1px solid #ddd; /* Optional border for clarity */
+        padding: 1px;
+        border-bottom: 1px solid #ddd;
     }
 
     @media print {
@@ -34,7 +29,6 @@
             margin: 0.3cm;
         }
 
-        /* Page-specific padding and formatting */
         body, .max-w-4xl {
             background: none !important;
             box-shadow: none !important;
@@ -48,14 +42,14 @@
         /* Font sizes */
         h1 { font-size: 24pt; }
         h2 { font-size: 9pt; }
-        h3, p { font-size: 9pt; }
+        h3, p, span { font-size: 9pt; }
         ul.list-disc { font-size: 9pt; }
 
         /* Utility classes */
         .text-4xl { font-size: 20pt; }
         .text-2xl { font-size: 12pt; }
         .text-base { font-size: 12pt; }
-        .ml-8  font-size: 9pt; }
+        .ml-8 { font-size: 9pt; }
         .no-print { display: none !important; }
 
         /* Element alignment and spacing */
@@ -73,7 +67,7 @@
 <body class="bg-slate-100 font-ubuntu font-normal">
 
     <!-- Main Container -->
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg m-10">
 
         <!-- Header and Summary Container -->
         <div class="flex">
@@ -113,7 +107,7 @@
                         <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
                         <ul class="list-disc list-outside ml-4 mt-0 space-y-2">
                             {% for highlight in job.highlights %}
-                                <li>{{ highlight }}</li>
+                                <li>{{ highlight | safe }}</li>
                             {% endfor %}
                         </ul>
                     </li>
@@ -139,24 +133,6 @@
                 {% endfor %}
             </ul>
         </section>
-
-        <!-- Skills Section
-        <section class="mt-8">
-            <h2>Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
-                {% for skill in skills %}
-                    <div class="flex items-center justify-between p-2">
-                        <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
-                        <span class="text-right">
-                            {% for keyword in skill.keywords %}
-                                {{ keyword }}{% if not loop.last %}, {% endif %}
-                            {% endfor %}
-                        </span>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
-        -->
 
         <!-- Skills Section -->
         <section class="mt-8">

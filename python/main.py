@@ -23,7 +23,7 @@ class ResumeHandler(FileSystemEventHandler):
         self.render_template()
         self.tailwindcss_build()
 
-    def on_modified(self, event):
+    def on_closed(self, event):
         print(event)
         if event.src_path in ['./input/resume.json', './input/templates/template.html']:
             print(f"Detected relevant changes in {event.src_path}")
