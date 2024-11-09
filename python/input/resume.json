@@ -29,10 +29,10 @@
       "endDate": "now",
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
-        "Build-up and leading a 5-member IT team, managed freelancers on various projects.",
-        "Introduced agile development and operations methodologies. Established automated CI/CD pipelines with trunk-based development, reducing cycle time by a factor of 2.",
-        "Designed reverse logistics software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex logistic processes into customer company websites over API ",
-        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%. Empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points while enabling to finish the projects in-time",
+        "Build-up and leading a 5-member remote IT team, managed freelancers on various projects",
+        "Introduced agile development and operations methodologies, established automated CI/CD pipelines with trunk-based development, cutting cycle time in half.",
+        "Designed reverse logistics software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex logistic processes into customer company websites over API and scaleable logistic. ",
+        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
         "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
         "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
       ]
@@ -45,10 +45,10 @@
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
-        "Migrated storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
+        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
         "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs.",
         "Automated platform code deployment via CI/CD pipelines improving software QA, developer experience and time spent by developers for crowdfunding platform updates",
-        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also enabling better business intelligence capabilities."
+        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
     {
@@ -57,10 +57,12 @@
       "location": "",
       "startDate": "08/2017",
       "endDate": "09/2022",
-      "summary": "Developed an Open Source framework for diskless computing optimized towards blockchain hashing at scale.",
+      "summary": "Developed Coinboot - a lightweight framework for diskless GPU computing",
       "highlights": [
-        "Created the Coinboot framework for diskless computing optimized for blockchain hashing.",
-        "Presented recorded talks and further details on the project at https://coinboot.io."
+        "Based on my experience with the setup and operations of huge GPU clusters for cryptographic hashing I created Coinboot",
+        "Coinboot has a lightweight footprint (105 MB boot image) driven by the demand to run sufficiently on thousands of machines with commditity 1 Gbit/s network hardware.",
+        "Coinboot uses network booting and is running diskless without any need for local storage media, it enables to run immutable infrastructure with no configuration drift, minimizing the TCO.",
+        "Coinboot was deployed to over 35k nodes with 270k GPUs in total at datacenters worldwide."
       ]
     },
     {
@@ -69,12 +71,12 @@
       "location": "Dresden, Germany",
       "startDate": "04/2014",
       "endDate": "10/2019",
-      "summary": "Responsible for infrastructure operations, storage migration, and software development.",
+      "summary": "Responsible for infrastructure operations, storage migration, and software development",
       "highlights": [
-        "Led the migration of Swift and GlusterFS to Ceph as unified distributed storage.",
-        "Planned and developed a software stack for the production of mobile GPU container datacenters.",
-        "Monitored and operated OpenStack in highly-distributed micro datacenters with waste heat recovery.",
-        "Provided in-house and presales IT infrastructure consulting."
+      "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance",
+      "Led the planning and development of a mobile GPU container datacenter software stack, delivering within a few months securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>",
+      "Led the planning and development of a mobile GPU container datacenter software stack, delivered within a few months, ensuring the company's future by a multimillion-dollar revenue growth.",
+      "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
     },
     {
