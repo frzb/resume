@@ -46,8 +46,7 @@
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
         "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
-        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs.",
-        "Automated platform code deployment via CI/CD pipelines improving software QA, developer experience and time spent by developers for crowdfunding platform updates",
+        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs via CI/CD pipelines improving software QA, developer and user experience and time spent by developers for crowdfunding platform updates",
         "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
@@ -59,10 +58,10 @@
       "endDate": "09/2022",
       "summary": "Developed Coinboot - a lightweight framework for diskless GPU computing",
       "highlights": [
-        "Based on my experience with the setup and operations of huge GPU clusters for cryptographic hashing I created Coinboot",
+        "Created Coinboot based on my experience with the setup and operations of huge GPU clusters for cryptographic hashing <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video link to conference talk)</a>",
         "Coinboot has a lightweight footprint (105 MB boot image) driven by the demand to run sufficiently on thousands of machines with commditity 1 Gbit/s network hardware.",
         "Coinboot uses network booting and is running diskless without any need for local storage media, it enables to run immutable infrastructure with no configuration drift, minimizing the TCO.",
-        "Coinboot was deployed to over 35k nodes with 270k GPUs in total at datacenters worldwide."
+        "Coinboot was deployed to over 35k nodes with 60k GPUs in total at datacenters worldwide."
       ]
     },
     {
