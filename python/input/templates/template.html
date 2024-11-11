@@ -34,14 +34,13 @@
             box-shadow: none !important;
             padding: 9pt !important;
             font-size: 9pt !important;
-            line-height: 1.25 !important;
         }
 
         .max-w-4xl { padding: 0 !important }
 
         /* Font sizes */
         h1 { font-size: 24pt; }
-        h2 { font-size: 9pt; }
+        h2 { font-size: 12pt; }
         h3, p, span, a { font-size: 9pt; }
         ul.list-disc { font-size: 9pt; }
 
@@ -57,6 +56,9 @@
         .mt-8 { margin-top: 0 !important; }
         .mt-10 { margin-top: 0 !important; }
         .mb-1 { margin-bottom: 0 !important; }
+         li { line-height: 1.0 !important; margin-bottom: 4px !important }
+         p { line-height: 1.0 !important; }
+
 
         /* Page-break management */
         li, div { break-inside: avoid; }
@@ -105,7 +107,7 @@
                             <p>{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
                         <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
-                        <ul class="list-disc list-outside ml-4 mt-0 space-y-2">
+                        <ul class="list-disc list-outside ml-4 mt-2 space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight | safe }}</li>
                             {% endfor %}
