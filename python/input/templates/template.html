@@ -56,12 +56,12 @@
         .mt-8 { margin-top: 0 !important; }
         .mt-10 { margin-top: 0 !important; }
         .mb-1 { margin-bottom: 0 !important; }
-         li { line-height: 1.0 !important; margin-bottom: 4px !important }
-         p { line-height: 1.0 !important; }
+         li { line-height: 1.1 !important; margin-bottom: 4px !important }
+         p { line-height: 1.1 !important; }
 
 
         /* Page-break management */
-        li, div { break-inside: avoid; }
+        section, li, div { break-inside: avoid; }
     }
     </style>
 </head>
@@ -106,7 +106,7 @@
                             </h3>
                             <p>{{ job.startDate }} – {{ job.endDate }}</p>
                         </div>
-                        <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary }}</p>
+                        <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary | safe }}</p>
                         <ul class="list-disc list-outside ml-4 mt-2 space-y-2">
                             {% for highlight in job.highlights %}
                                 <li>{{ highlight | safe }}</li>
