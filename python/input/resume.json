@@ -30,8 +30,8 @@
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
         "Build-up and leading a 5-member remote IT team, managed freelancers on various projects",
-        "Introduced agile development and operations methodologies, established automated CI/CD pipelines with trunk-based development, cutting cycle time in half.",
-        "Designed reverse logistics software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex logistic processes into customer company websites over API and scaleable logistic. ",
+        "Consistent optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
+        "Designed software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites, time saving check-in of recycled goods return parcels and batch tracing",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
         "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
         "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
@@ -45,23 +45,24 @@
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
-        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
         "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs via CI/CD pipelines improving software QA, developer and user experience and time spent by developers for crowdfunding platform updates",
-        "Redesigned monitoring, alerting, and logging stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
+        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
+        "Redesigned the monitoring stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
     {
-      "position": "Founder and Project Leader",
+      "position": "Founder and Lead Software Engineer",
       "name": "Coinboot",
       "location": "",
       "startDate": "08/2017",
       "endDate": "09/2022",
-      "summary": "Developed Coinboot - a lightweight framework for diskless GPU computing",
+      "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Created Coinboot based on my experience with the setup and operations of huge GPU clusters for cryptographic hashing <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video link to conference talk)</a>",
-        "Coinboot has a lightweight footprint (105 MB boot image) driven by the demand to run sufficiently on thousands of machines with commditity 1 Gbit/s network hardware.",
-        "Coinboot uses network booting and is running diskless without any need for local storage media, it enables to run immutable infrastructure with no configuration drift, minimizing the TCO.",
-        "Coinboot was deployed to over 35k nodes with 60k GPUs in total at datacenters worldwide."
+        "Developed Coinboot, a lightweight framework enabling diskless GPU computing with minimal TCO across thousands of nodes.",
+        "Engineered a lightweight (105 MB) network-bootable image optimized for scalability, allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
+        "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image",
+        "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership.",
+        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient"
       ]
     },
     {
@@ -74,7 +75,6 @@
       "highlights": [
       "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance",
       "Led the planning and development of a mobile GPU container datacenter software stack, delivering within a few months securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>",
-      "Led the planning and development of a mobile GPU container datacenter software stack, delivered within a few months, ensuring the company's future by a multimillion-dollar revenue growth.",
       "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
     },
