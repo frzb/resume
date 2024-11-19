@@ -31,9 +31,10 @@
       "highlights": [
         "Built and led a 5-member remote IT team from the ground up, with the team ultimately becoming resilient and self-sufficient.",
         "Consistent optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
-        "Designed software architecture for recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing",
-        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
-        "Introduction of open-source ERPNext as Open Source ERP software, adapting it for cloud-native patterns to enable quick deployment of instances, streamlining business processes and reducing application and data fragmentation.",
+        "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing",
+        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device. Accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
+        "Introduction of open-source ERPNext as Open Source ERP software, streamlining business processes and reducing application and data fragmentation.", 
+        "Adapting ERPNext for cloud-native patterns to enable quick deployment of instances within minutes instead of hours, speeding up business process integration development. ",
         "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
       ]
     },
@@ -45,8 +46,8 @@
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure.",
       "highlights": [
-        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs via CI/CD pipelines improving software QA, developer and user experience and time spent by developers for crowdfunding platform updates",
-        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access.",
+        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs via CI/CD pipelines. Improving software QA, developer and user experience and time spent by developers for crowdfunding platform updates",
+        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access. Necessary for horizontal scaling and seamless platform code roll-out.",
         "Redesigned the monitoring stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
@@ -58,8 +59,7 @@
       "endDate": "09/2022",
       "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Developed Coinboot, a lightweight framework enabling diskless GPU computing with minimal TCO across thousands of nodes.",
-        "Engineered a lightweight (105 MB) network-bootable image optimized for scalability, allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
+        "Engineered a lightweight (105 MB) network-bootable image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
         "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image",
         "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership.",
         "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient"
