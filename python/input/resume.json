@@ -29,7 +29,7 @@
       "endDate": "now",
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
-        "Built and led a 5-member remote IT team from the ground up, with the team ultimately becoming resilient and self-sufficient.",
+        "Built and led a 5-member remote IT team from the ground up, creating a team with high resilience and self-sufficient.",
         "Consistent optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
         "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device. Accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
@@ -147,6 +147,18 @@
     }
   ],
   "skills": [
+    {
+      "name": "Interpersonal",
+      "keywords": [
+        "high empathic", "excelent listening", "flexible leadership" 
+  ]
+    },
+    {
+      "name": "Cognitive",
+      "keywords": [
+        "Divergent thinking", "Detail-oriented", "highly analytic" 
+  ]
+    },
     {
       "name": "Operating Systems",
       "keywords": [
