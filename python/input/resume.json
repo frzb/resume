@@ -73,8 +73,8 @@
       "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development",
       "highlights": [
-      "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance",
       "Led the planning and development of a mobile GPU container datacenter software stack, delivering within a few months securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>",
+      "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance",
       "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
     },
@@ -158,7 +158,8 @@
       "name": "Cognitive",
       "keywords": [
         "Attention to Detail",
-        "Divergent and Analytic Thinking"
+        "Divergent and Analytic Thinking",
+        "Balanced Pragmastism"
   ]
     },
     {
