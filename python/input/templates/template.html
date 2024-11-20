@@ -93,7 +93,7 @@
                 <p><a class="text-blue-500 hover:underline" href="{{ basics.url }}">{{ basics.url }}</a></p>
             </header>
         </div>
-
+styl
         <!-- Work Experience Section -->
         <section class="mt-8">
             <h2>Work Experience</h2>
@@ -142,16 +142,20 @@
             <h2>Skills</h2>
             <div class="grid-container">
                 {% for skill in skills %}
-                    <div class="grid-item">
-                        <div class="flex items-center justify-between p-2">
-                            <span class="font-semibold text-slate-800 pr-4">{{ skill.name }}</span>
-                            <span class="text-right">
-                                {% for keyword in skill.keywords %}
-                                    {{ keyword }}{% if not loop.last %}, {% endif %}
-                                {% endfor %}
-                            </span>
+                <div class="grid-item">
+                    <div class="flex items-center justify-between">
+                        <div class="font-semibold text-slate-800 shrink grow-0">{{ skill.name }}</div>
+                        <div class="text-right pl-2">
+                            {% for keyword in skill.keywords %}
+                            {% if '\n' in keyword %}
+                            {{ keyword.strip('\n') }}{% if not loop.last %}, <br> {% endif %}
+                            {% else %}
+                            {{ keyword }}{% if not loop.last %}, {% endif %}
+                            {% endif  %}
+                            {% endfor %}
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </section>
@@ -163,7 +167,7 @@
             <div class="grid-container">
                 {% for language in languages %}
                 <div class="grid-item">
-                    <div class="flex items-center justify-between p-2">
+                    <div class="flex items-center justify-between">
                         <span class="font-semibold text-slate-800 pr-4">{{ language.language }}</span>
                         <span class="text-right">{{ language.fluency }}</span>
                     </div>
