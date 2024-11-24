@@ -59,7 +59,7 @@
       "endDate": "09/2022",
       "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Engineered a lightweight (105 MB) network-bootable image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
+        "Engineered a lightweight (105 MB) network-bootable Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
         "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image",
         "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership.",
         "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient"
@@ -73,7 +73,7 @@
       "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development",
       "highlights": [
-      "Led the planning and development of a mobile GPU container datacenter software stack, delivering within a few months securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>",
+      "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>",
       "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance",
       "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
@@ -150,16 +150,17 @@
     {
       "name": "Interpersonal",
       "keywords": [
-        "High Empathy",
+        "High Empathy\n",
+        "Strong Levelheadedness\n",
         "Flexible Leadership"
   ]
     },
     {
       "name": "Cognitive",
       "keywords": [
-        "Attention to Detail",
-        "Divergent and Analytic Thinking",
-        "Balanced Pragmastism"
+        "Attention to Detail\n",
+        "Divergent and Analytic Thinking\n",
+        "Balanced Pragmatism"
   ]
     },
     {
@@ -350,6 +351,13 @@
       "name": "TSDB",
       "keywords": [
         "InfluxDB"
+      ]
+    },
+    {
+      "name": "Collaboration Tools Management",
+      "keywords": [
+        "GCP + Google Workspace\n",
+        "Slack"
       ]
     },
     {
