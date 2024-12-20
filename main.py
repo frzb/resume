@@ -4,14 +4,16 @@ import time
 import webbrowser
 import subprocess
 import click
+#from dotenv import dotenv_values
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from weasyprint import HTML
 
 class ResumeHandler(FileSystemEventHandler):
-    def __init__(self):
+    def __init__(self, include_private_data):
         self.json_path = os.path.abspath("input/resume.json")
+        self.json_path_private = os.path.abspath("input/private/private_resume.json")
         # Jinja template Environment
         self.env = Environment(
             loader=FileSystemLoader(os.path.dirname("input/templates/template.html")),
@@ -20,7 +22,7 @@ class ResumeHandler(FileSystemEventHandler):
 
         # Render output on startup
         print("Render on startup")
-        self.load_data()
+        self.load_data(include_private_data)
         self.render_template()
         self.tailwindcss_build()
 
@@ -28,16 +30,21 @@ class ResumeHandler(FileSystemEventHandler):
         print(event)
         if event.src_path in ['./input/resume.json', './input/templates/template.html']:
             print(f"Detected relevant changes in {event.src_path}")
-            self.load_data()
+            self.load_data(include_private_data)
             self.render_template()
             self.tailwindcss_build()
             HTML('./output/output_resume.html').write_pdf('./output/resume.pdf')
 
-    def load_data(self):
+    def load_data(self, include_private_data=False):
         try:
             # Load the updated resume data from the JSON file
             with open(self.json_path) as json_file:
                 self.resume_data = json.load(json_file)
+            if include_private_data:
+                print("Including private data")
+                with open(self.json_path_private) as json_file:
+                    self.resume_data_private = json.load(json_file)
+                    self.resume_data.update(self.resume_data_private)
             print("JSON resume data")
             print(self.resume_data)
         except Exception as e:
@@ -79,8 +86,8 @@ class ResumeHandler(FileSystemEventHandler):
 
 
 class ResumeWatcher:
-    def __init__(self):
-        self.event_handler = ResumeHandler()
+    def __init__(self, include_private_data):
+        self.event_handler = ResumeHandler(self.include_private_data)
         self.observer = Observer()
 
     def start(self):
@@ -100,21 +107,26 @@ class ResumeWatcher:
         print("Stopped watching.")
 
 @click.group(invoke_without_command=True)
+@click.option("--include-private-data", is_flag=True, help="Include private data")
 @click.pass_context
-def build(ctx):
+def build(ctx, include_private_data):
     """
     Watch for file changes, trigger automatic build
     """
+    ctx.ensure_object(dict)
+    ctx.obj['include_private_data'] = include_private_data
     if not ctx.invoked_subcommand:
-        watcher = ResumeWatcher()
+        watcher = ResumeWatcher(include_private_data=ctx.obj['include_private_data'])
         watcher.start()
 
 @build.command()
-def one_shot():
+@click.pass_context
+def one_shot(ctx):
     """
     Build CSS file and render Jinja template one time and exit
     """
-    ResumeHandler()
+    include_private_data = ctx.obj.get('include_private_data', False)
+    ResumeHandler(include_private_data=include_private_data)
 
 if __name__ == "__main__":
     build()
