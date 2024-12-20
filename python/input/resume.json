@@ -59,10 +59,10 @@
       "endDate": "09/2022",
       "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Engineered a lightweight (105 MB) network-bootable Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
+        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient",
+        "Engineered a lightweight (105 MB) network-bootable diskless Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
         "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image",
-        "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership.",
-        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient"
+        "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership."
       ]
     },
     {
