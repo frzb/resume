@@ -1,0 +1,14 @@
+{
+
+  "basics": {
+    "email": "gunter.miegel@coinboot.io",
+    "phone": "+49 351 8626945",
+    "mobile": "+49 151 51587824",
+    "location": {
+      "address": "Zschertnitzer Weg 24",
+      "postalCode": "01217",
+      "city": "Dresden",
+      "country": "Germany"
+    }
+  }
+}
