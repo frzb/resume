@@ -102,19 +102,19 @@ class ResumeWatcher:
 @click.group(invoke_without_command=True)
 @click.pass_context
 def build(ctx):
+    """
+    Watch for file changes, trigger automatic build
+    """
     if not ctx.invoked_subcommand:
         watcher = ResumeWatcher()
         watcher.start()
 
 @build.command()
 def one_shot():
-    #@click.option('--one_shot', help="Build CSS file and render Jinja template one time and exit")
-    print("one shot")
-    foo  = ResumeHandler()
-    #foo.load_data()
-    #foo.render_template()
-    #foo.tailwindcss_build()
-    ##HTML('./output/output_resume.html').write_pdf('./output/resume.pdf')
+    """
+    Build CSS file and render Jinja template one time and exit
+    """
+    ResumeHandler()
 
 if __name__ == "__main__":
     build()
