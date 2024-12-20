@@ -5,7 +5,6 @@ import webbrowser
 import subprocess
 import click
 
-# from dotenv import dotenv_values
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -67,7 +66,6 @@ class ResumeHandler(FileSystemEventHandler):
                     self.resume_data = self.merged
             print("JSON resume data")
             print(self.resume_data)
-            print(self.merged)
         except Exception as e:
             print(f"Error loading data from {self.json_path}: {e}")
 
