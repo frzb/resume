@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "resume-python"
+version = "0.1.0"
+description = ""
+authors = ["Gunter Miegel"]
+readme = "README.md"
+packages = [{include = "resume_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+watchdog = "^5.0.3"
+jinja2 = "^3.1.4"
+pytailwindcss = "^0.2.0"
+weasyprint = "^63.0"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+j2lint = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
