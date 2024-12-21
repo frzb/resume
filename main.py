@@ -4,7 +4,6 @@ import time
 import webbrowser
 import subprocess
 import click
-
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -36,17 +35,11 @@ class ResumeHandler(FileSystemEventHandler):
             self.tailwindcss_build()
             HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
 
+
     def merge_dicts(self, dict1, dict2):
-        """
-        Recursively merge two dictionaries. Values from dict2 overwrite those in dict1.
-        """
         for key, value in dict2.items():
-            if (
-                key in dict1
-                and isinstance(dict1[key], dict)
-                and isinstance(value, dict)
-            ):
-                self.merge_dicts(dict1[key], value)
+            if key in dict1 and isinstance(dict1[key], dict) and isinstance(value, dict):
+                dict1[key] = self.merge_dicts(dict1[key], value)
             else:
                 dict1[key] = value
         return dict1
@@ -60,10 +53,8 @@ class ResumeHandler(FileSystemEventHandler):
                 print("Including private data")
                 with open(self.json_path_private) as json_file:
                     self.resume_data_private = json.load(json_file)
-                    self.merged = self.merge_dicts(
-                        self.resume_data, self.resume_data_private
-                    )
-                    self.resume_data = self.merged
+                    merged = self.merge_dicts(self.resume_data, self.resume_data_private)
+                    self.resume_data = merged
             print("JSON resume data")
             print(self.resume_data)
         except Exception as e:
@@ -106,7 +97,7 @@ class ResumeHandler(FileSystemEventHandler):
 
 class ResumeWatcher:
     def __init__(self, include_private_data):
-        self.event_handler = ResumeHandler(self.include_private_data)
+        self.event_handler = ResumeHandler(include_private_data)
         self.observer = Observer()
 
     def start(self):
@@ -136,7 +127,8 @@ def build(ctx, include_private_data):
     ctx.ensure_object(dict)
     ctx.obj["include_private_data"] = include_private_data
     if not ctx.invoked_subcommand:
-        watcher = ResumeWatcher(include_private_data=ctx.obj["include_private_data"])
+        include_private_data = ctx.obj.get("include_private_data", False)
+        watcher = ResumeWatcher(include_private_data=include_private_data)
         watcher.start()
 
 
