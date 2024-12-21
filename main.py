@@ -4,13 +4,11 @@ import time
 import webbrowser
 import subprocess
 import click
-
-# from dotenv import dotenv_values
+#from dotenv import dotenv_values
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from weasyprint import HTML
-
 
 class ResumeHandler(FileSystemEventHandler):
     def __init__(self, include_private_data):
@@ -30,27 +28,12 @@ class ResumeHandler(FileSystemEventHandler):
 
     def on_closed(self, event):
         print(event)
-        if event.src_path in ["./input/resume.json", "./input/templates/template.html"]:
+        if event.src_path in ['./input/resume.json', './input/templates/template.html']:
             print(f"Detected relevant changes in {event.src_path}")
             self.load_data(include_private_data)
             self.render_template()
             self.tailwindcss_build()
-            HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
-
-    def merge_dicts(self, dict1, dict2):
-        """
-        Recursively merge two dictionaries. Values from dict2 overwrite those in dict1.
-        """
-        for key, value in dict2.items():
-            if (
-                key in dict1
-                and isinstance(dict1[key], dict)
-                and isinstance(value, dict)
-            ):
-                self.merge_dicts(dict1[key], value)
-            else:
-                dict1[key] = value
-        return dict1
+            HTML('./output/output_resume.html').write_pdf('./output/resume.pdf')
 
     def load_data(self, include_private_data=False):
         try:
@@ -61,13 +44,9 @@ class ResumeHandler(FileSystemEventHandler):
                 print("Including private data")
                 with open(self.json_path_private) as json_file:
                     self.resume_data_private = json.load(json_file)
-                    self.merged = self.merge_dicts(
-                        self.resume_data, self.resume_data_private
-                    )
-                    self.resume_data = self.merged
+                    self.resume_data.update(self.resume_data_private)
             print("JSON resume data")
             print(self.resume_data)
-            print(self.merged)
         except Exception as e:
             print(f"Error loading data from {self.json_path}: {e}")
 
@@ -127,7 +106,6 @@ class ResumeWatcher:
         self.observer.stop()
         print("Stopped watching.")
 
-
 @click.group(invoke_without_command=True)
 @click.option("--include-private-data", is_flag=True, help="Include private data")
 @click.pass_context
@@ -136,11 +114,10 @@ def build(ctx, include_private_data):
     Watch for file changes, trigger automatic build
     """
     ctx.ensure_object(dict)
-    ctx.obj["include_private_data"] = include_private_data
+    ctx.obj['include_private_data'] = include_private_data
     if not ctx.invoked_subcommand:
-        watcher = ResumeWatcher(include_private_data=ctx.obj["include_private_data"])
+        watcher = ResumeWatcher(include_private_data=ctx.obj['include_private_data'])
         watcher.start()
-
 
 @build.command()
 @click.pass_context
@@ -148,9 +125,8 @@ def one_shot(ctx):
     """
     Build CSS file and render Jinja template one time and exit
     """
-    include_private_data = ctx.obj.get("include_private_data", False)
+    include_private_data = ctx.obj.get('include_private_data', False)
     ResumeHandler(include_private_data=include_private_data)
-
 
 if __name__ == "__main__":
     build()
