@@ -4,11 +4,13 @@ import time
 import webbrowser
 import subprocess
 import click
-#from dotenv import dotenv_values
+
+# from dotenv import dotenv_values
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from weasyprint import HTML
+
 
 class ResumeHandler(FileSystemEventHandler):
     def __init__(self, include_private_data):
@@ -28,12 +30,12 @@ class ResumeHandler(FileSystemEventHandler):
 
     def on_closed(self, event):
         print(event)
-        if event.src_path in ['./input/resume.json', './input/templates/template.html']:
+        if event.src_path in ["./input/resume.json", "./input/templates/template.html"]:
             print(f"Detected relevant changes in {event.src_path}")
             self.load_data(include_private_data)
             self.render_template()
             self.tailwindcss_build()
-            HTML('./output/output_resume.html').write_pdf('./output/resume.pdf')
+            HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
 
     def load_data(self, include_private_data=False):
         try:
@@ -87,7 +89,7 @@ class ResumeHandler(FileSystemEventHandler):
 
 class ResumeWatcher:
     def __init__(self, include_private_data):
-        self.event_handler = ResumeHandler(self.include_private_data)
+        self.event_handler = ResumeHandler(include_private_data)
         self.observer = Observer()
 
     def start(self):
@@ -106,6 +108,7 @@ class ResumeWatcher:
         self.observer.stop()
         print("Stopped watching.")
 
+
 @click.group(invoke_without_command=True)
 @click.option("--include-private-data", is_flag=True, help="Include private data")
 @click.pass_context
@@ -114,10 +117,12 @@ def build(ctx, include_private_data):
     Watch for file changes, trigger automatic build
     """
     ctx.ensure_object(dict)
-    ctx.obj['include_private_data'] = include_private_data
+    ctx.obj["include_private_data"] = include_private_data
     if not ctx.invoked_subcommand:
-        watcher = ResumeWatcher(include_private_data=ctx.obj['include_private_data'])
+        include_private_data = ctx.obj.get("include_private_data", False)
+        watcher = ResumeWatcher(include_private_data=include_private_data)
         watcher.start()
+
 
 @build.command()
 @click.pass_context
@@ -125,8 +130,9 @@ def one_shot(ctx):
     """
     Build CSS file and render Jinja template one time and exit
     """
-    include_private_data = ctx.obj.get('include_private_data', False)
+    include_private_data = ctx.obj.get("include_private_data", False)
     ResumeHandler(include_private_data=include_private_data)
+
 
 if __name__ == "__main__":
     build()
