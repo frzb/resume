@@ -4,8 +4,6 @@ import time
 import webbrowser
 import subprocess
 import click
-
-# from dotenv import dotenv_values
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -37,6 +35,15 @@ class ResumeHandler(FileSystemEventHandler):
             self.tailwindcss_build()
             HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
 
+
+    def merge_dicts(self, dict1, dict2):
+        for key, value in dict2.items():
+            if key in dict1 and isinstance(dict1[key], dict) and isinstance(value, dict):
+                dict1[key] = self.merge_dicts(dict1[key], value)
+            else:
+                dict1[key] = value
+        return dict1
+
     def load_data(self, include_private_data=False):
         try:
             # Load the updated resume data from the JSON file
@@ -46,7 +53,8 @@ class ResumeHandler(FileSystemEventHandler):
                 print("Including private data")
                 with open(self.json_path_private) as json_file:
                     self.resume_data_private = json.load(json_file)
-                    self.resume_data.update(self.resume_data_private)
+                    merged = self.merge_dicts(self.resume_data, self.resume_data_private)
+                    self.resume_data = merged
             print("JSON resume data")
             print(self.resume_data)
         except Exception as e:
