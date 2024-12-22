@@ -9,11 +9,13 @@
     },
     "profiles": [
       {
-        "network": "Coinboot",
-        "url": "https://coinboot.io",
-        "username": "coinboot"
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/gunter-miegel/"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/frzb"
       }
-
     ]
   },
   "work": [
