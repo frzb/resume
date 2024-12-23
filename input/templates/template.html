@@ -73,37 +73,44 @@
 
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg m-10">
 
-        <div class="flex gap-2">
-            <!-- Left Column -->
-            <div class="flex flex-col gap-2 flex-1">
-                <!-- Top Field -->
-                <div class="border text-slate-800 text-base font-bold italic" style="white-space: pre-wrap;">
-                    {{ basics.summary }}
-                </div>
-                <!-- Bottom Fields -->
-                <div class="flex gap-2">
-                    {% for profile in basics.profiles %}
-                        <div class="flex-1 border">
-                            <a href="{{ profile.url }}" class="no-underline inline-flex items-center">
-                              <!-- Icon -->
-                              <img src="../static/icons/{{ profile.network | lower }}.svg"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                              <!-- Text -->
-                              <span>{{ profile.network }}</span>
-                            </a>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <!-- Right Column -->
-            <div class="flex-shrink-0 border border-gray-400 text-right">
-                <h1>{{ basics.name }}</h1>
-                <p class="text-xl font-light text-slate-700">{{ basics.label }}</p>
-                <p>{{ basics.location.address }}</p>
-                <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
-                <p>E-Mail: {{ basics.email }}</p>
-                <p class="text-slate-700">Phone: {{ basics.phone }}</p>
-            </div>
+<!-- Parent Container -->
+<div class="flex gap-4 border p-4 items-start justify-between">
+
+    <!-- Left Column -->
+    <div class="flex flex-col gap-2 flex-1">
+        <!-- Top Field -->
+        <div class="border text-slate-800 font-bold italic pl-6" style="white-space: pre-wrap;">
+            {{ basics.summary }}
         </div>
+
+        <!-- Bottom Fields -->
+        <div class="flex gap-2 pl-6">
+            {% for profile in basics.profiles %}
+                <div class="flex-1 border">
+                    <a href="{{ profile.url }}" class="no-underline inline-flex items-center gap-1">
+                        <img src="../static/icons/{{ profile.network | lower }}.svg"
+                        class="h-5 w-5" align-middle text-current
+                        alt="{{ profile.network }} Icon">
+                        <span class="text-base align-middle">{{ profile.network }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="flex flex-col justify-between text-right border border-gray-400">
+        <div>
+            <h1>{{ basics.name }}</h1>
+            <p>{{ basics.label }}</p>
+            <p>{{ basics.location.address }}</p>
+            <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+            <p>E-Mail: {{ basics.email }}</p>
+        </div>
+        <p>{{ basics.phone }}</p>
+    </div>
+</div>
+
 
         <!-- Work Experience Section -->
         <section class="mt-8">
