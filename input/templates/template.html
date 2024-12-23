@@ -83,8 +83,8 @@
                 <!-- Bottom Fields -->
                 <div class="flex gap-2">
                     {% for profile in basics.profiles %}
-                        <div class="flex-1 border p-4">
-                            <a href="{{ profile.url }}" class="no-underline inline-flex items-center space-x-2">
+                        <div class="flex-1 border">
+                            <a href="{{ profile.url }}" class="no-underline inline-flex items-center">
                               <!-- Icon -->
                               <img src="../static/icons/{{ profile.network | lower }}.svg"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                               <!-- Text -->
