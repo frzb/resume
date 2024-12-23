@@ -12,6 +12,7 @@ from weasyprint import HTML
 
 class ResumeHandler(FileSystemEventHandler):
     def __init__(self, include_private_data):
+        self.include_private_data = include_private_data
         self.json_path = os.path.abspath("input/resume.json")
         self.json_path_private = os.path.abspath("input/private/private_resume.json")
         # Jinja template Environment
@@ -30,7 +31,7 @@ class ResumeHandler(FileSystemEventHandler):
         print(event)
         if event.src_path in ["./input/resume.json", "./input/templates/template.html"]:
             print(f"Detected relevant changes in {event.src_path}")
-            self.load_data(include_private_data)
+            self.load_data(self.include_private_data)
             self.render_template()
             self.tailwindcss_build()
             HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
