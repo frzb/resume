@@ -10,6 +10,7 @@
               rel="stylesheet">
         <link href="../static/css/tailwind.css" rel="stylesheet">
         <style>
+
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -19,6 +20,13 @@
             .grid-item {
                 padding: 3px;
                 border-bottom: 1px solid #ddd;
+            }
+
+            /* Mobile Devices */
+            @media screen and (max-width: 480px) {
+              .grid-container {
+                grid-template-columns: 1fr;
+              }
             }
 
             @media print {
