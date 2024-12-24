@@ -1,199 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Take this settings with a grain of salt, I have not much experience with CSS and Tailwind -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ basics.name }} - Resume</title>
+    <!-- Take this settings with a grain of salt, I have not much experience with CSS and Tailwind -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ basics.name }} - Resume</title>
+        <!-- Fonts and Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap"
+              rel="stylesheet">
+        <link href="../static/css/tailwind.css" rel="stylesheet">
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 0.5rem;
+            }
 
-    <!-- Fonts and Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link href="../static/css/tailwind.css" rel="stylesheet">
+            .grid-item {
+                padding: 3px;
+                border-bottom: 1px solid #ddd;
+            }
 
-    <style>
+            @media print {
+                @page {
+                    size: A4;
+                    margin: 0.3cm;
+                }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 0.5rem;
-    }
+                body, .max-w-4xl {
+                    background: none !important;
+                    box-shadow: none !important;
+                    padding: 9pt !important;
+                    font-size: 9pt !important;
+                }
 
-    .grid-item {
-        padding: 3px;
-        border-bottom: 1px solid #ddd;
-    }
+                .max-w-4xl { padding: 0 !important }
 
-    @media print {
-        @page {
-            size: A4;
-            margin: 0.3cm;
-        }
+                /* Font sizes */
+                h1 { font-size: 24pt; }
+                h2 { font-size: 12pt; }
+                h3, p, span, a { font-size: 9pt; }
+                ul.list-disc { font-size: 9pt; }
 
-        body, .max-w-4xl {
-            background: none !important;
-            box-shadow: none !important;
-            padding: 9pt !important;
-            font-size: 9pt !important;
-        }
+                /* Utility classes */
+                .text-4xl { font-size: 20pt; }
+                .text-2xl { font-size: 12pt; }
+                .text-base { font-size: 12pt; }
+                .ml-8 { font-size: 9pt; }
+                .no-print { display: none !important; }
 
-        .max-w-4xl { padding: 0 !important }
+                /* Element alignment and spacing */
+                h1 { white-space: nowrap; }
+                .mt-8 { margin-top: 0 !important; }
+                .mt-10 { margin-top: 0 !important; }
+                .mb-1 { margin-bottom: 0 !important; }
+                 li { line-height: 1.1 !important; margin-bottom: 4px !important }
+                 p { line-height: 1.1 !important; }
 
-        /* Font sizes */
-        h1 { font-size: 24pt; }
-        h2 { font-size: 12pt; }
-        h3, p, span, a { font-size: 9pt; }
-        ul.list-disc { font-size: 9pt; }
-
-        /* Utility classes */
-        .text-4xl { font-size: 20pt; }
-        .text-2xl { font-size: 12pt; }
-        .text-base { font-size: 12pt; }
-        .ml-8 { font-size: 9pt; }
-        .no-print { display: none !important; }
-
-        /* Element alignment and spacing */
-        h1 { white-space: nowrap; }
-        .mt-8 { margin-top: 0 !important; }
-        .mt-10 { margin-top: 0 !important; }
-        .mb-1 { margin-bottom: 0 !important; }
-         li { line-height: 1.1 !important; margin-bottom: 4px !important }
-         p { line-height: 1.1 !important; }
-
-
-        /* Page-break management */
-        section, li, div { break-inside: avoid; }
-
-    }
-    </style>
-</head>
-
-<body class="bg-slate-100 font-ubuntu font-normal">
-
-    <!-- Main Container -->
-
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg m-10">
-
-<!-- Parent Container -->
-<div class="flex gap-4 border p-4 items-start justify-between">
-
-    <!-- Left Column -->
-    <div class="flex flex-col gap-2 flex-1">
-        <!-- Top Field -->
-        <div class="border text-slate-800 font-bold italic pl-6" style="white-space: pre-wrap;">
-            {{ basics.summary }}
-        </div>
-
-        <!-- Bottom Fields -->
-        <div class="flex gap-2 pl-6">
-            {% for profile in basics.profiles %}
-                <div class="flex-1 border">
-                    <a href="{{ profile.url }}" class="no-underline inline-flex items-center gap-1">
-                        <img src="../static/icons/{{ profile.network | lower }}.svg"
-                        class="h-5 w-5" align-middle text-current
-                        alt="{{ profile.network }} Icon">
-                        <span class="text-base align-middle">{{ profile.network }}</span>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-
-    <!-- Right Column -->
-    <div class="flex flex-col justify-between text-right border border-gray-400">
-        <div>
-            <h1>{{ basics.name }}</h1>
-            <p>{{ basics.label }}</p>
-            <p>{{ basics.location.address }}</p>
-            <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
-            <p>E-Mail: {{ basics.email }}</p>
-        </div>
-        <p>{{ basics.phone }}</p>
-    </div>
-</div>
-
-
-        <!-- Work Experience Section -->
-        <section class="mt-8">
-            <h2>Work Experience</h2>
-            <ul class="space-y-4">
-                {% for job in work %}
-                    <li>
-                        <div class="flex justify-between items-center">
-                            <h3>
-                                {{ job.position }}{% if job.name %} | {{ job.name }}{% endif %}
-                                {% if job.location %} | {{ job.location }}{% endif %}
-                            </h3>
-                            <p>{{ job.startDate }} – {{ job.endDate }}</p>
-                        </div>
-                        <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary | safe }}</p>
-                        <ul class="list-disc list-outside ml-4 mt-2 space-y-2">
-                            {% for highlight in job.highlights %}
-                                <li>{{ highlight | safe }}</li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-
-        <!-- Education Section -->
-        <section class="mt-8">
-            <h2>Education</h2>
-            <ul class="space-y-4">
-                {% for degree in education %}
-                    <li class="flex justify-between items-center">
-                        <div>
-                            <h3>{{ degree.area }}</h3>
-                            <p class="font-bold leading-relaxed">
-                                {{ degree.institution }}, {{ degree.location }}
-                                {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
-                            </p>
-                        </div>
-                        <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="mt-8">
-            <h2>Skills and Experience</h2>
-            <div class="grid-container">
-                {% for skill in skills %}
-                <div class="grid-item">
-                    <div class="flex items-center justify-between">
-                        <div class="font-semibold text-slate-800 shrink grow-0">{{ skill.name }}</div>
-                        <div class="text-right pl-2">
-                            {% for keyword in skill.keywords %}
-                            {% if '\n' in keyword %}
-                            {{ keyword.strip('\n') }}{% if not loop.last %}, <br> {% endif %}
-                            {% else %}
-                            {{ keyword }}{% if not loop.last %}, {% endif %}
-                            {% endif  %}
-                            {% endfor %}
-                        </div>
+                /* Page-break management */
+                section, li, div { break-inside: avoid; }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-100 font-ubuntu font-normal">
+        <!-- Main Container -->
+        <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg m-10">
+            <!-- Parent Container -->
+            <div class="flex gap-4 border p-4 items-start justify-between">
+                <!-- Left Column -->
+                <div class="flex flex-col gap-2 flex-1">
+                    <!-- Top Field -->
+                    <div class="border text-slate-800 font-bold italic pl-6"
+                         style="white-space: pre-wrap">{{ basics.summary }}</div>
+                    <!-- Bottom Fields -->
+                    <div class="flex gap-2 pl-6">
+                        {% for profile in basics.profiles %}
+                            <div class="flex-1 border">
+                                <a href="{{ profile.url }}"
+                                   class="no-underline inline-flex items-center gap-1">
+                                    <img src="../static/icons/{{ profile.network | lower }}.svg"
+                                         class="h-5 w-5"
+                                         align-middle
+                                         text-current
+                                         alt="{{ profile.network }} Icon">
+                                    <span class="text-base align-middle">{{ profile.network }}</span>
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
-            </div>
-        </section>
-
-
-        <!-- Language Section -->
-        <section class="mt-8">
-            <h2>Languages</h2>
-            <div class="grid-container">
-                {% for language in languages %}
-                <div class="grid-item">
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-slate-800 pr-4">{{ language.language }}</span>
-                        <span class="text-right">{{ language.fluency }}</span>
+                <!-- Right Column -->
+                <div class="flex flex-col justify-between text-right border border-gray-400">
+                    <div>
+                        <h1>{{ basics.name }}</h1>
+                        <p>{{ basics.label }}</p>
+                        <p>{{ basics.location.address }}</p>
+                        <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                        <p>E-Mail: {{ basics.email }}</p>
                     </div>
+                    <p>{{ basics.phone }}</p>
                 </div>
-                {% endfor %}
             </div>
-        </section>
-
-    </div>
-</body>
+            <!-- Work Experience Section -->
+            <section class="mt-8">
+                <h2>Work Experience</h2>
+                <ul class="space-y-4">
+                    {% for job in work %}
+                        <li>
+                            <div class="flex justify-between items-center">
+                                <h3>
+                                    {{ job.position }}
+                                    {% if job.name %}| {{ job.name }}{% endif %}
+                                    {% if job.location %}| {{ job.location }}{% endif %}
+                                </h3>
+                                <p>{{ job.startDate }} – {{ job.endDate }}</p>
+                            </div>
+                            <p class=" font-bold leading-relaxed ml-1 mb-1">{{ job.summary | safe }}</p>
+                            <ul class="list-disc list-outside ml-4 mt-2 space-y-2">
+                                {% for highlight in job.highlights %}<li>{{ highlight | safe }}</li>{% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <!-- Education Section -->
+            <section class="mt-8">
+                <h2>Education</h2>
+                <ul class="space-y-4">
+                    {% for degree in education %}
+                        <li class="flex justify-between items-center">
+                            <div>
+                                <h3>{{ degree.area }}</h3>
+                                <p class="font-bold leading-relaxed">
+                                    {{ degree.institution }}, {{ degree.location }}
+                                    {% if degree.studyType %}| {{ degree.studyType }}{% endif %}
+                                </p>
+                            </div>
+                            <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <!-- Skills Section -->
+            <section class="mt-8">
+                <h2>Skills and Experience</h2>
+                <div class="grid-container">
+                    {% for skill in skills %}
+                        <div class="grid-item">
+                            <div class="flex items-center justify-between">
+                                <div class="font-semibold text-slate-800 shrink grow-0">{{ skill.name }}</div>
+                                <div class="text-right pl-2">
+                                    {% for keyword in skill.keywords %}
+                                        {% if '\n' in keyword %}
+                                            {{ keyword.strip("\n") }}
+                                            {% if not loop.last %}
+                                                ,
+                                                <br>
+                                            {% endif %}
+                                        {% else %}
+                                            {{ keyword }}
+                                            {% if not loop.last %},{% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- Language Section -->
+            <section class="mt-8">
+                <h2>Languages</h2>
+                <div class="grid-container">
+                    {% for language in languages %}
+                        <div class="grid-item">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-slate-800 pr-4">{{ language.language }}</span>
+                                <span class="text-right">{{ language.fluency }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
