@@ -17,7 +17,7 @@ class ResumeHandler(FileSystemEventHandler):
         self.json_path_private = os.path.abspath("input/private/private_resume.json")
         # Jinja template Environment
         self.env = Environment(
-            loader=FileSystemLoader(os.path.dirname("input/templates/template.html")),
+            loader=FileSystemLoader(os.path.dirname("input/templates/template.j2")),
             autoescape=select_autoescape(["html", "xml"]),
         )
 
@@ -29,7 +29,7 @@ class ResumeHandler(FileSystemEventHandler):
 
     def on_closed(self, event):
         print(event)
-        if event.src_path in ["./input/resume.json", "./input/templates/template.html"]:
+        if event.src_path in ["./input/resume.json", "./input/templates/template.j2"]:
             print(f"Detected relevant changes in {event.src_path}")
             self.load_data(self.include_private_data)
             self.render_template()
@@ -78,7 +78,7 @@ class ResumeHandler(FileSystemEventHandler):
     def render_template(self):
         try:
             # Load the template
-            template_name = os.path.basename("templates/template.html")
+            template_name = os.path.basename("templates/template.j2")
             template = self.env.get_template(template_name)
             output_html_path = os.path.abspath("output/output_resume.html")
 
