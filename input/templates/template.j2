@@ -66,7 +66,7 @@
                  p { line-height: 1.1 !important; }
 
                 /* Page-break management */
-                section, li, div { break-inside: avoid; }
+                li, div { break-inside: avoid; }
             }
         </style>
     </head>
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <!-- Work Experience Section -->
-            <section class="mt-8">
+            <div class="mt-8">
                 <h2>Work Experience</h2>
                 <ul class="space-y-4">
                     {% for job in work %}
@@ -130,9 +130,9 @@
                         </li>
                     {% endfor %}
                 </ul>
-            </section>
+            </div>
             <!-- Education Section -->
-            <section class="mt-8">
+            <div class="mt-8">
                 <h2>Education</h2>
                 <ul class="space-y-4">
                     {% for degree in education %}
@@ -148,9 +148,9 @@
                         </li>
                     {% endfor %}
                 </ul>
-            </section>
+            </div>
             <!-- Skills Section -->
-            <section class="mt-8">
+            <div class="mt-8">
                 <h2>Skills and Experience</h2>
                 <div class="grid-container">
                     {% for skill in skills %}
@@ -175,9 +175,9 @@
                         </div>
                     {% endfor %}
                 </div>
-            </section>
+            </div>
             <!-- Language Section -->
-            <section class="mt-8">
+            <div class="mt-8">
                 <h2>Languages</h2>
                 <div class="grid-container">
                     {% for language in languages %}
@@ -189,7 +189,7 @@
                         </div>
                     {% endfor %}
                 </div>
-            </section>
+            </div>
         </div>
     </body>
 </html>
