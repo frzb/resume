@@ -10,22 +10,9 @@
               rel="stylesheet">
         <link href="../static/css/tailwind.css" rel="stylesheet">
         <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 0.5rem;
-            }
-
             .grid-item {
                 padding: 3px;
                 border-bottom: 1px solid #ddd;
-            }
-
-            /* Mobile Devices */
-            @media screen and (max-width: 520px) {
-              .grid-container {
-                grid-template-columns: 1fr;
-              }
             }
 
             @media print {
@@ -151,7 +138,7 @@
             <!-- Skills Section -->
             <div class="mt-8">
                 <h2>Skills and Experience</h2>
-                <div class="grid-container">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-2">
                     {% for skill in skills %}
                         <div class="grid-item">
                             <div class="flex items-center justify-between">
@@ -178,7 +165,7 @@
             <!-- Language Section -->
             <div class="mt-8">
                 <h2>Languages</h2>
-                <div class="grid-container">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-2">
                     {% for language in languages %}
                         <div class="grid-item">
                             <div class="flex items-center justify-between">
