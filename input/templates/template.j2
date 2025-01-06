@@ -141,14 +141,12 @@
                                 <div class="text-right pl-2">
                                     {% for keyword in skill.keywords %}
                                         {% if '\n' in keyword %}
-                                            {{ keyword.strip("\n") }}
-                                            {% if not loop.last %}
-                                                ,
-                                                <br>
-                                            {% endif %}
+                                            {{ keyword.strip("\n") }},
+                                            <br>
+                                        {% elif not loop.last %}
+                                            {{ keyword }},
                                         {% else %}
                                             {{ keyword }}
-                                            {% if not loop.last %},{% endif %}
                                         {% endif %}
                                     {% endfor %}
                                 </div>

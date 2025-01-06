@@ -18,6 +18,8 @@ class ResumeHandler(FileSystemEventHandler):
         # Jinja template Environment
         self.env = Environment(
             loader=FileSystemLoader(os.path.dirname("input/templates/template.j2")),
+            trim_blocks=True,
+            lstrip_blocks=True, 
             autoescape=select_autoescape(["html", "xml"]),
         )
 
