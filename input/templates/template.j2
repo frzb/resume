@@ -139,16 +139,7 @@
                             <div class="flex items-center justify-between">
                                 <div class="font-semibold text-slate-700 shrink grow-0">{{ skill.name }}</div>
                                 <div class="text-right text-slate-700 pl-2">
-                                    {% for keyword in skill.keywords %}
-                                        {% if '\n' in keyword %}
-                                            {{ keyword.strip("\n") }},
-                                            <br>
-                                        {% elif not loop.last %}
-                                            {{ keyword }},
-                                        {% else %}
-                                            {{ keyword }}
-                                        {% endif %}
-                                    {% endfor %}
+                                    {{ skill.keywords | join(', ') | replace('\n, ',',<br>') }}
                                 </div>
                             </div>
                         </div>
