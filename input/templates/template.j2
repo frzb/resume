@@ -117,15 +117,15 @@
                 <h2>Education</h2>
                 <ul class="space-y-4">
                     {% for degree in education %}
-                        <li class="sm:flex flex-row justify-between items-center">
-                            <div>
+                        <li>
+                            <div class="sm:flex flex-row justify-between items-center">
                                 <h3>{{ degree.area }}</h3>
-                                <p class="font-bold leading-relaxed">
-                                    {{ degree.institution }}, {{ degree.location }}
-                                    {% if degree.studyType %}| {{ degree.studyType }}{% endif %}
-                                </p>
+                                <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
                             </div>
-                            <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
+                            <p class="font-bold leading-relaxed ml-1 mb-1">
+                                {{ degree.institution }}, {{ degree.location }}
+                                {% if degree.studyType %}| {{ degree.studyType }}{% endif %}
+                            </p>
                         </li>
                     {% endfor %}
                 </ul>
