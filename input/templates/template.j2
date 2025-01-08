@@ -96,7 +96,7 @@
                 <ul class="space-y-4">
                     {% for job in work %}
                         <li>
-                            <div class="flex justify-between items-center">
+                            <div class="sm:flex flex-row justify-between items-center">
                                 <h3>
                                     {{ job.position }}
                                     {% if job.name %}| {{ job.name }}{% endif %}
@@ -117,7 +117,7 @@
                 <h2>Education</h2>
                 <ul class="space-y-4">
                     {% for degree in education %}
-                        <li class="flex justify-between items-center">
+                        <li class="sm:flex flex-row justify-between items-center">
                             <div>
                                 <h3>{{ degree.area }}</h3>
                                 <p class="font-bold leading-relaxed">
