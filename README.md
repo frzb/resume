@@ -1,10 +1,10 @@
 # My resume generator
 
-This is my custom slight  resume generator. It creates a static website and/or a PDF document.
+This is my custom resume generator. It creates a static website and/or a PDF document.
 
 ## Features
 
-* Input data as [JSON resume](https://jsonresume.org/schema
+* Input data as [JSON resume](https://jsonresume.org/schema)
 * Exclude/include private data
 * Python 3.10
 * [Jinja](https://jinja.palletsprojects.com/en/stable/) for HTML templating
