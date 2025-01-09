@@ -40,6 +40,9 @@ Commands:
   one-shot  Build CSS file and render Jinja template one time and exit
 ```
 
+Input resume data is placed in `input/resume.json`.  
+Private resume data can be placed in  `input/private/private_resume.json`.
+
 ### Example
 
 ```
