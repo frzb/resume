@@ -48,5 +48,5 @@ Private resume data can be placed in  `input/private/private_resume.json`.
 ### Example
 
 ```
-$  poetry execute python3 main.py --include-private-data
+$  poetry run python3 main.py --include-private-data
 ```
