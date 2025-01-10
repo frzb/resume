@@ -1,0 +1,13 @@
+{
+  "basics": {
+    "email": "mail@example.com",
+    "phone": "123456",
+    "mobile": "123456",
+    "location": {
+      "address": "Musterstraße 23",
+      "postalCode": "01234",
+      "city": "Musterstadt",
+      "country": "Germany"
+    }
+  }
+}
