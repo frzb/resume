@@ -1,4 +1,4 @@
-# My resume generator
+# My resume generator ![Build and Deploy](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 This is my custom resume generator. It creates a static website and/or a PDF document.
 
