@@ -1,11 +1,16 @@
 # My resume generator ![Build and Deploy](https://github.com/frzb/resume/actions/workflows/build_and_deploy.yml/badge.svg)
 This is my custom resume generator. It creates a static website and/or a PDF document.
 
+## Why?
+Why I am not using an already existing static site generator like Jekyll or Hugo?  
+I wanted to get more familiar with one of my weak spots - web development: HTML, CSS and templating with Jinja.
+
 ## Features
 
 * Input data as [JSON resume](https://jsonresume.org/schema)
 * Exclude/include private data
 * Python 3.10
+* Responsive design for mobile devices
 * [Jinja](https://jinja.palletsprojects.com/en/stable/) for HTML templating
 * [pyTailwindCSS](https://pypi.org/project/pytailwindcss/) standalone Tailwind CSS in Python without Node.js 
 * [WeasyPrint](https://weasyprint.org/) for PDF document creation
