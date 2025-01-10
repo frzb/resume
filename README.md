@@ -1,5 +1,4 @@
-# My resume generator ![Build and Deploy](https://github.com/github/docs/actions/workflows/build_and_deploy.yml/badge.svg)
-
+# My resume generator ![Build and Deploy](https://github.com/frzb/resume/actions/workflows/build_and_deploy.yml/badge.svg)
 This is my custom resume generator. It creates a static website and/or a PDF document.
 
 ## Features
