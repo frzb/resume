@@ -4,7 +4,7 @@
     "name": "Gunter Miegel",
     "email": "gunter.miegel@coinboot.io",
     "location": {
-      "city": "***REMOVED***",
+      "city": "Dresden",
       "country": "Germany"
     },
     "profiles": [
@@ -22,7 +22,7 @@
     {
       "position": "Head of IT",
       "name": "HolyPoly",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "startDate": "08/2021",
       "endDate": "11/2024",
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
@@ -40,7 +40,7 @@
     {
       "position": "Senior Site Reliability Engineer",
       "name": "Startnext",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "startDate": "11/2019",
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure",
@@ -67,7 +67,7 @@
     {
       "position": "DevOps Engineer",
       "name": "Cloud&Heat",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "startDate": "04/2014",
       "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development",
@@ -85,7 +85,7 @@
     {
       "position": "Linux-Systemadministrator",
       "name": "BIT.Group",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "startDate": "06/2010",
       "endDate": "03/2014",
       "summary": "Managed cloud infrastructure for SAP Cloud"
@@ -93,7 +93,7 @@
     {
       "position": "Linux-Systemadministrator",
       "name": "drinet",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "startDate": "2009-09",
       "endDate": "2010-05",
       "summary": "Provided IT support and infrastructure management"
@@ -101,7 +101,7 @@
   ],
   "volunteer": [
     {
-      "organization": "Mobile Jugendarbeit ***REMOVED***-Süd e. V.",
+      "organization": "Mobile Jugendarbeit Dresden-Süd e. V.",
       "position": "IT Infrastructure Consultant",
       "startDate": "2010",
       "summary": "Providing IT consulting and support for outreach youth work"
@@ -116,13 +116,13 @@
   "education": [
     {
       "institution": "Berufsfachschule für Wirtschaft und Technik des TÜV Rheinland",
-      "location": "***REMOVED***, Germany",
+      "location": "Dresden, Germany",
       "area": "State-certified technician for information and communication technology",
       "startDate": "2007",
       "endDate": "2009"
     },
     {
-      "institution": "Technical University ***REMOVED***",
+      "institution": "Technical University Dresden",
       "location": "Germany",
       "area": "Mechatronics",
       "studyType": "No degree",
