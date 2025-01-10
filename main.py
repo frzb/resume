@@ -36,7 +36,7 @@ class ResumeHandler(FileSystemEventHandler):
             self.load_data(self.include_private_data)
             self.render_template()
             self.tailwindcss_build()
-            HTML("./output/output_resume.html").write_pdf("./output/resume.pdf")
+            HTML("./output/index.html").write_pdf("./output/resume.pdf")
 
 
     def merge_dicts(self, dict1, dict2):
@@ -82,7 +82,7 @@ class ResumeHandler(FileSystemEventHandler):
             # Load the template
             template_name = os.path.basename("templates/template.j2")
             template = self.env.get_template(template_name)
-            output_html_path = os.path.abspath("output/output_resume.html")
+            output_html_path = os.path.abspath("output/index.html")
 
             # Render the template with the resume data
             rendered_html = template.render(self.resume_data)
