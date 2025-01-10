@@ -71,8 +71,9 @@ class ResumeHandler(FileSystemEventHandler):
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
             )
-            print("Tailwind CSS compiled successfully:")
             print(result.stdout)
+            print(result.stderr)
+            print("Tailwind CSS compiled successfully:")
         except subprocess.CalledProcessError as e:
             print("Error occurred while running Tailwind CSS:")
             print(e.stderr)
