@@ -19,7 +19,7 @@ class ResumeHandler(FileSystemEventHandler):
         self.env = Environment(
             loader=FileSystemLoader(os.path.dirname("input/templates/template.j2")),
             trim_blocks=True,
-            lstrip_blocks=True, 
+            lstrip_blocks=True,
             autoescape=select_autoescape(["html", "xml"]),
         )
 
@@ -135,6 +135,8 @@ def build(ctx, include_private_data):
         watcher.start()
 
 
+
+
 @build.command()
 @click.pass_context
 def one_shot(ctx):
@@ -146,4 +148,10 @@ def one_shot(ctx):
 
 
 if __name__ == "__main__":
+    # Create output directory
+    try:
+        os.makedirs("./output", exist_ok=True)
+    except OSError as e:
+        print(f"Error creating directory: {e}")
+
     build()
