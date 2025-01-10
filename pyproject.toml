@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Gunter Miegel"]
 readme = "README.md"
-packages = [{include = "resume_python"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
