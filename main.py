@@ -82,7 +82,7 @@ class ResumeHandler(FileSystemEventHandler):
             # Load the template
             template_name = os.path.basename("templates/template.j2")
             template = self.env.get_template(template_name)
-            output_html_path = os.path.abspath("output/index.html")
+            output_html_path = os.path.abspath("./index.html")
 
             # Render the template with the resume data
             rendered_html = template.render(self.resume_data)
