@@ -1,0 +1,166 @@
+{
+  "basics": {
+    "summary": "15 Jahre Erfahrung in Betrieb, Infrastruktur, Softwareentwicklung \n Menschenorientierter IT-Generalist und kreativer Problemlöser",
+    "name": "Gunter Miegel",
+    "email": "gunter.miegel@coinboot.io",
+    "location": {
+      "city": "Dresden",
+      "country": "Deutschland"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/gunter-miegel/"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/frzb"
+      }
+    ]
+  },
+  "work": [
+    {
+      "position": "Leiter IT",
+      "name": "HolyPoly",
+      "location": "Dresden, Deutschland",
+      "startDate": "08/2021",
+      "endDate": "11/2024",
+      "summary": "Verantwortlich für Unternehmens-IT: Strategie, Infrastruktur, Dienste, Softwareentwicklung, Betrieb und Sicherheit",
+      "highlights": [
+        "Aufbau und Leitung eines 5-köpfigen Remote-IT-Teams von Grund auf, Schaffung eines Teams mit hoher Resilienz und Eigenständigkeit.",
+        "Kontinuierliche Optimierung der Entwicklungs- und Betriebsprozesse meines Teams, Reduzierung der Durchlaufzeiten um 50 % bei gleichzeitiger Aufrechterhaltung qualitativ hochwertiger IT-Support-Dienste.",
+        "Entwurf einer Softwarearchitektur für Kunststoffrecyclingprogramme multinationaler Spielzeug- und Babyproduktunternehmen, die eine einfache Integration komplexer Rückführungsprozesse in die Websites der Kunden ermöglicht und die Zeit für die Überprüfung zurückgesandter Waren zur Chargenverfolgung reduziert.",
+        "Entwicklung eines Bluetooth-WebSocket-Brückendienstes für ein tragbares Röntgenfluoreszenzgerät. Beschleunigung der Erkennung von anorganischen Verunreinigungen in recycelbaren Plastikspielzeugen und Gehäusen von Elektrowerkzeugen um 200 %, wodurch Projekte termingerecht abgeschlossen werden konnten und Kunden datengestützte Entscheidungen über die Verwendung von recyceltem Kunststoff in neuen Produkten basierend auf Millionen von Datenpunkten treffen konnten.",
+        "Einführung von ERPNext als Open-Source-ERP-Software, Straffung von Geschäftsprozessen und Reduzierung der Anwendungs- und Datenfragmentierung.",
+        "Anpassung von ERPNext an Cloud-native Muster, um die schnelle Bereitstellung von Instanzen innerhalb von Minuten anstelle von Stunden zu ermöglichen und die Integration von Geschäftsprozessen zu beschleunigen.",
+        "Etablierung einer IT-Sicherheitsgrundlage mit den begrenzten Ressourcen eines Startups durch pragmatische Anwendung von Zero-Trust- und Security-First-Sicherheitsmodellen für die Softwareentwicklung und den Infrastrukturbetrieb, um die IT-Compliance-Anforderungen globaler Unternehmen zu erfüllen. Dadurch konnte HolyPoly Aufträge und Umsätze dieser Kunden erhalten.",
+        "Verantwortlich für die Einrichtung eines ISMS, um die IT-Sicherheits- und Datenschutzanforderungen interner und geschäftlicher Kunden zu erfüllen."
+      ]
+    },
+    {
+      "position": "Senior Site Reliability Engineer",
+      "name": "Startnext",
+      "location": "Dresden, Deutschland",
+      "startDate": "11/2019",
+      "endDate": "07/2021",
+      "summary": "Betrieb der Infrastruktur der Crowdfunding-Plattform",
+      "highlights": [
+        "Transformation der Legacy-PHP-Crowdfunding-Anwendung in eine containerbasierte Infrastruktur, die horizontales Skalieren und nahtlose Code-Rollouts der Plattform über CI/CD-Pipelines ermöglicht. Verbesserung der Softwarequalitätssicherung, der Entwickler- und Benutzererfahrung sowie der Zeit, die Entwickler für Updates der Crowdfunding-Plattform benötigen.",
+        "Migration des Crowdfunding-Plattform-Speichers von NFS zu Ceph Distributed Storage, wodurch gleichzeitiger Lese- und Schreibzugriff ermöglicht wird. Erforderlich für horizontales Skalieren und nahtlose Code-Rollouts der Plattform.",
+        "Neugestaltung des Monitoring-Stacks unter Verwendung von Telegraf, Loki, InfluxDB, Alertmanager und Grafana. Reduzierung der Betriebskosten und Verbesserung der Überwachungseffizienz sowie der Fähigkeiten für Geschäftsanalyse."
+      ]
+    },
+    {
+      "position": "Gründer und Lead Software Engineer",
+      "name": "Coinboot",
+      "location": "",
+      "startDate": "08/2017",
+      "endDate": "09/2022",
+      "summary": "Erstellung von Coinboot, einem leichtgewichtigen Framework für Festplattenlose GPU-Computing-Cluster <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video des Konferenzvortrags)</a>",
+      "highlights": [
+        "Bereitstellung von Coinboot für über 35.000 Knoten mit 60.000 GPUs in Rechenzentren weltweit, was die Akquisition und den Betrieb von GPU-Computing-Clustern mit minimalen Gesamtkosten ermöglicht und die hohe Effizienz von Coinboot beweist.",
+        "Entwicklung eines leichtgewichtigen (105 MB) netzwerk-bootfähigen Linux-Images, das auf Skalierbarkeit optimiert ist. Ermöglicht Coinboot den effektiven Betrieb auf Tausenden von Knoten mit Standard-1-Gbit/s-Netzwerkhardware.",
+        "Erstellung eines benutzerfreundlichen Plug-in-Systems, das die Anpassung und unterschiedliche Rechenlasten ohne Neukompilierung des Boot-Images ermöglicht.",
+        "Ermöglichung von unveränderlicher, konfigurationsdriftfreier Infrastruktur für hocheffiziente GPU-Cluster, wodurch Betriebskosten reduziert und minimale Gesamtkosten gewährleistet werden."
+      ]
+    },
+    {
+      "position": "DevOps Engineer",
+      "name": "Cloud&Heat",
+      "location": "Dresden, Deutschland",
+      "startDate": "04/2014",
+      "endDate": "10/2019",
+      "summary": "Verantwortlich für Infrastruktur-Betrieb, Speicher-Migration und Software-Entwicklung",
+      "highlights": [
+        "Leitung der Planung und Entwicklung eines mobilen GPU-Container-Rechenzentrum-Software-Stacks. Lieferung innerhalb weniger Monate, Sicherstellung der Zukunft des Unternehmens mit Umsätzen in Millionenhöhe <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video-Link)</a>.",
+        "Automatisierung der Einrichtung und Konfiguration von Ceph als einheitlichem OpenStack-Speicher-Backend, Ersetzen des bestehenden OpenStack Swift- und GlusterFS-Setups. Erfolgreiche Bereitstellung im Petabyte-Bereich, Bereitstellung einer optimierten Konfiguration für heterogene Festplatten- und Rackkonfigurationen bei gleichzeitiger Reduzierung der Komplexität und Verbesserung der Speicherleistung.",
+        "Verwaltung von OpenStack-Betrieb, Überwachung und Integration in hochverteilten Mikro-Rechenzentren mit effizienter Abwärmenutzung."
+      ]
+    },
+    {
+      "position": "Elternzeit",
+      "startDate": "11/2012",
+      "endDate": "08/2013"
+    },
+    {
+      "position": "Linux-Systemadministrator",
+      "name": "BIT.Group",
+      "location": "Dresden, Deutschland",
+      "startDate": "06/2010",
+      "endDate": "03/2014",
+      "summary": "Verwaltung der Cloud-Infrastruktur für SAP Cloud"
+    },
+    {
+      "position": "Linux-Systemadministrator",
+      "name": "drinet",
+      "location": "Dresden, Deutschland",
+      "startDate": "2009-09",
+      "endDate": "2010-05",
+      "summary": "Bereitstellung von IT-Support und Infrastrukturmanagement"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Mobile Jugendarbeit Dresden-Süd e. V.",
+      "position": "Berater für IT-Infrastruktur",
+      "startDate": "2010",
+      "summary": "Bereitstellung von IT-Beratung und -Support für aufsuchende Jugendarbeit"
+    },
+    {
+      "organization": "Programmierkurse für Grundschüler",
+      "position": "Kursleiter",
+      "startDate": "2019",
+      "summary": "Ermöglichung eines ersten Kontakts mit Programmierung und Ingenieurwesen für Grundschulkinder"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Berufsfachschule für Wirtschaft und Technik des TÜV Rheinland",
+      "location": "Dresden, Deutschland",
+      "area": "Staatlich geprüfter Techniker für Informations- und Kommunikationstechnologie",
+      "startDate": "2007",
+      "endDate": "2009"
+    },
+    {
+      "institution": "Technische Universität Dresden",
+      "location": "Deutschland",
+      "area": "Mechatronik",
+      "studyType": "Kein Abschluss",
+      "startDate": "2004",
+      "endDate": "2006"
+    },
+    {
+      "institution": "Hochschule Landshut",
+      "location": "Deutschland",
+      "area": "Maschinenbau",
+      "studyType": "Kein Abschluss",
+      "startDate": "2003",
+      "endDate": "2004"
+    },
+    {
+      "institution": "Berufliches Schulzentrum für Technik Zittau",
+      "location": "Deutschland",
+      "area": "Abitur (Allgemeine Hochschulreife)",
+      "startDate": "2000",
+      "endDate": "2003"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Zwischenmenschliche Fähigkeiten",
+      "keywords": [
+        "Hohe Empathie",
+        "Starke Besonnenheit",
+        "Flexibles Führungsverhalten"
+      ]
+    },
+    {
+      "name": "Kognitive Fähigkeiten",
+      "keywords": [
+        "Detailgenauigkeit",
+        "Divergentes und analytisches Denken",
+        "Ausgewogener Pragmatismus"
+      ]
+    }
+  ]
+}
