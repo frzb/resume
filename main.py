@@ -28,7 +28,6 @@ class ResumeHandler(FileSystemEventHandler):
 
     def create_output(self):
         for file in os.listdir("./input"):
-            print(file)
             if file.endswith(".json"):
                 name = f"_{os.path.splitext(os.path.basename(file))[0]}"
                 data = self.load_data(f"./input/{file}", self.include_private_data)
@@ -58,7 +57,6 @@ class ResumeHandler(FileSystemEventHandler):
     def load_data(self, file, include_private_data=False):
         try:
             # Load the updated resume data from the JSON file
-            print(file)
             with open(file) as json_file:
                 resume_data = json.load(json_file)
             if include_private_data:
