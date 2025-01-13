@@ -20,7 +20,7 @@
   },
   "work": [
     {
-      "position": "Leiter IT",
+      "position": "Head of IT",
       "name": "HolyPoly",
       "location": "Dresden, Deutschland",
       "startDate": "08/2021",
@@ -117,7 +117,7 @@
     {
       "institution": "Berufsfachschule für Wirtschaft und Technik des TÜV Rheinland",
       "location": "Dresden, Deutschland",
-      "area": "Staatlich geprüfter Techniker für Informations- und Kommunikationstechnologie",
+      "area": "Staatlich geprüfter Assistent für Informatik",
       "startDate": "2007",
       "endDate": "2009"
     },
@@ -147,20 +147,251 @@
   ],
   "skills": [
     {
-      "name": "Zwischenmenschliche Fähigkeiten",
+      "name": "Soziale Kompetenz",
       "keywords": [
-        "Hohe Empathie",
-        "Starke Besonnenheit",
-        "Flexibles Führungsverhalten"
+        "Hohe Empathie\n",
+        "Starke Besonnenheit\n",
+        "Flexible Führung"
       ]
     },
     {
       "name": "Kognitive Fähigkeiten",
       "keywords": [
-        "Detailgenauigkeit",
-        "Divergentes und analytisches Denken",
+        "Detailgenauigkeit\n",
+        "Divergentes und analytisches Denken\n",
         "Ausgewogener Pragmatismus"
       ]
+    },
+    {
+      "name": "Betriebssysteme",
+      "keywords": [
+        "Linux: Debian, Ubuntu, Alpine\n",
+        "BSD: OpenBSD, FreeBSD"
+      ]
+    },
+    {
+      "name": "Programmiersprachen",
+      "keywords": [
+        "Bash/Shell",
+        "Python",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Konfigurationsmanagement",
+      "keywords": [
+        "Ansible",
+        "Chef"
+      ]
+    },
+    {
+      "name": "Infrastruktur als Code",
+      "keywords": [
+        "Terraform (GCP)"
+      ]
+    },
+    {
+      "name": "Container-Technologie",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "K3s"
+      ]
+    },
+    {
+      "name": "Dashboards und Analyse",
+      "keywords": [
+        "Grafana"
+      ]
+    },
+    {
+      "name": "Enterprise Resource Planning",
+      "keywords": [
+        "ERPNext"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "GitLab CI",
+        "GitHub Actions",
+        "Travis CI"
+      ]
+    },
+    {
+      "name": "RDBMS",
+      "keywords": [
+        "MySQL/MariaDB",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "NoSQL",
+      "keywords": [
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Webserver",
+      "keywords": [
+        "Nginx",
+        "Apache HTTP Server"
+      ]
+    },
+    {
+      "name": "Backup und Wiederherstellung",
+      "keywords": [
+        "Bareos",
+        "BackupPC",
+        "Restic"
+      ]
+    },
+    {
+      "name": "Blockchain-Technologie",
+      "keywords": [
+        "Bitcoin",
+        "Ethereum"
+      ]
+    },
+    {
+      "name": "Verzeichnisdienste",
+      "keywords": [
+        "OpenLDAP"
+      ]
+    },
+    {
+      "name": "Notfallwiederherstellung",
+      "keywords": [
+        "Relax-and-Recover"
+      ]
+    },
+    {
+      "name": "DNS",
+      "keywords": [
+        "BIND9",
+        "Dnsmasq"
+      ]
+    },
+    {
+      "name": "IaaS",
+      "keywords": [
+        "OpenStack"
+      ]
+    },
+    {
+      "name": "Load Balancer/Reverse Proxy",
+      "keywords": [
+        "Traefik",
+        "HAProxy"
+      ]
+    },
+    {
+      "name": "E-Mail (MTA, MDA)",
+      "keywords": [
+        "Exim",
+        "Postfix",
+        "Dovecot"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "keywords": [
+        "Netdata",
+        "Telegraf",
+        "Prometheus",
+        "Check_MK"
+      ]
+    },
+    {
+      "name": "Paketfilter/Firewall",
+      "keywords": [
+        "iptables",
+        "nftables",
+        "OPNSense",
+        "pf",
+        "UFW"
+      ]
+    },
+    {
+      "name": "Passwort-Manager",
+      "keywords": [
+        "Bitwarden",
+        "pass"
+      ]
+    },
+    {
+      "name": "PKI/X.509",
+      "keywords": [
+        "OpenSSL"
+      ]
+    },
+    {
+      "name": "Quellcodeverwaltung",
+      "keywords": [
+        "GitHub",
+        "GitLab",
+        "BitBucket",
+        "Gitea"
+      ]
+    },
+    {
+      "name": "Versionskontrolle",
+      "keywords": [
+        "Git"
+      ]
+    },
+    {
+      "name": "Storage",
+      "keywords": [
+        "Ceph",
+        "NFS",
+        "ZFS",
+        "Samba",
+        "OpenStack Swift",
+        "GlusterFS",
+        "DRBD",
+        "Amazon S3"
+      ]
+    },
+    {
+      "name": "Zeitreihendatenbank (TSDB)",
+      "keywords": [
+        "InfluxDB"
+      ]
+    },
+    {
+      "name": "Kooperationswerkzeuge",
+      "keywords": [
+        "Google Workspace",
+        "Slack"
+      ]
+    },
+    {
+      "name": "Virtualisierung",
+      "keywords": [
+        "KVM",
+        "libvirt/virsh",
+        "VirtualBox",
+        "Vagrant"
+      ]
+    },
+    {
+      "name": "VPN",
+      "keywords": [
+        "WireGuard",
+        "OpenVPN",
+        "IPsec"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    },
+    {
+      "language": "Englisch",
+      "fluency": "CEFR C1 Fortgeschritten"
     }
   ]
 }

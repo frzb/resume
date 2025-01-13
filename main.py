@@ -106,6 +106,17 @@ class ResumeHandler(FileSystemEventHandler):
                 output_html_path = os.path.abspath("./index_de.html")
                 # Render the template with the resume data
                 rendered_html = template.render(data)
+                # JSON Resume has no proper I18N support
+                # We do dirty search-and-replace for the headlines translation
+                translations = [
+                    ("Work Experience", "Berufserfahrung"),
+                    ("Education", "Ausbildung"),
+                    ("Skills and Experience", "Kompetenzen und Erfahrung"),
+                    ("Languages", "Sprachen"),
+                ]
+                for search_phrase, replacement in translations:
+                    rendered_html = rendered_html.replace(search_phrase, replacement)
+
                 # Write the rendered HTML to the output file
                 with open(output_html_path, "w") as output_file:
                     output_file.write(rendered_html)
