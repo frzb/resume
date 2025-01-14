@@ -37,8 +37,10 @@ class ResumeHandler(FileSystemEventHandler):
 
     def on_closed(self, event):
         print(event)
-        # if event.src_path in ["./input/resume.json", "./input/templates/template.j2"]:
-        if event.src_path in ["./input"]:
+        print(event.src_path)
+        # VIM is writing a test file called 4913, so we need exclude this to trigger a build
+        # https://github.com/vim/vim/blob/30377e0fe084496911e108cbb33c84cf075e6e33/src/bufwrite.c#L1210
+        if "4913" not in event.src_path:
             print(f"Detected relevant changes in {event.src_path}")
             self.create_output()
 
