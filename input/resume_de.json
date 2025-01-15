@@ -29,11 +29,11 @@
       "highlights": [
         "Aufbau und Leitung eines 5-köpfigen Remote-IT-Teams von Grund auf, Schaffung eines Teams mit hoher Resilienz und Eigenständigkeit.",
         "Kontinuierliche Optimierung der Entwicklungs- und Betriebsprozesse meines Teams, Reduzierung der Durchlaufzeiten um 50 % bei gleichzeitiger Aufrechterhaltung qualitativ hochwertiger IT-Support-Dienste.",
-        "Entwurf einer Softwarearchitektur für Kunststoffrecyclingprogramme multinationaler Spielzeug- und Babyproduktunternehmen, die eine einfache Integration komplexer Rückführungsprozesse in die Websites der Kunden ermöglicht und die Zeit für die Überprüfung zurückgesandter Waren zur Chargenverfolgung reduziert.",
+        "Entwurf einer einheitlichen Softwarearchitektur für Kunststoffrecyclingprogramme multinationaler Spielzeug- und Babyproduktunternehmen, die eine einfache Integration komplexer Rückführungsprozesse in die Unternehmenswebseiten ermöglichte und die Zeit für den Check-In zurückgesandter Waren zur Chargenverfolgung reduzierte.",
         "Entwicklung eines Bluetooth-WebSocket-Brückendienstes für ein tragbares Röntgenfluoreszenzgerät. Beschleunigung der Erkennung von anorganischen Verunreinigungen in recycelbaren Plastikspielzeugen und Gehäusen von Elektrowerkzeugen um 200 %, wodurch Projekte termingerecht abgeschlossen werden konnten und Kunden datengestützte Entscheidungen über die Verwendung von recyceltem Kunststoff in neuen Produkten basierend auf Millionen von Datenpunkten treffen konnten.",
         "Einführung von ERPNext als Open-Source-ERP-Software, Straffung von Geschäftsprozessen und Reduzierung der Anwendungs- und Datenfragmentierung.",
-        "Anpassung von ERPNext an Cloud-native Muster, um die schnelle Bereitstellung von Instanzen innerhalb von Minuten anstelle von Stunden zu ermöglichen und die Integration von Geschäftsprozessen zu beschleunigen.",
-        "Etablierung einer IT-Sicherheitsgrundlage mit den begrenzten Ressourcen eines Startups durch pragmatische Anwendung von Zero-Trust- und Security-First-Sicherheitsmodellen für die Softwareentwicklung und den Infrastrukturbetrieb, um die IT-Compliance-Anforderungen globaler Unternehmen zu erfüllen. Dadurch konnte HolyPoly Aufträge und Umsätze dieser Kunden erhalten.",
+        "Anpassung von ERPNext an Cloud-Native Muster, um die schnelle Bereitstellung von Instanzen innerhalb von Minuten anstelle von Stunden zu ermöglichen und die Integration von Geschäftsprozessen zu beschleunigen.",
+        "Etablierung einer IT-Sicherheitsgrundlage mit den begrenzten Ressourcen eines Startups durch pragmatische Anwendung von Zero-Trust- und Security-First-Sicherheitsmodellen, um die IT-Compliance-Anforderungen globaler Unternehmen zu erfüllen. Dadurch konnte HolyPoly Aufträge und Umsätze mit diesen Kunden generieren.",
         "Verantwortlich für die Einrichtung eines ISMS, um die IT-Sicherheits- und Datenschutzanforderungen interner und geschäftlicher Kunden zu erfüllen."
       ]
     },
@@ -45,9 +45,9 @@
       "endDate": "07/2021",
       "summary": "Betrieb der Infrastruktur der Crowdfunding-Plattform",
       "highlights": [
-        "Transformation der Legacy-PHP-Crowdfunding-Anwendung in eine containerbasierte Infrastruktur, die horizontales Skalieren und nahtlose Code-Rollouts der Plattform über CI/CD-Pipelines ermöglicht. Verbesserung der Softwarequalitätssicherung, der Entwickler- und Benutzererfahrung sowie der Zeit, die Entwickler für Updates der Crowdfunding-Plattform benötigen.",
-        "Migration des Crowdfunding-Plattform-Speichers von NFS zu Ceph Distributed Storage, wodurch gleichzeitiger Lese- und Schreibzugriff ermöglicht wird. Erforderlich für horizontales Skalieren und nahtlose Code-Rollouts der Plattform.",
-        "Neugestaltung des Monitoring-Stacks unter Verwendung von Telegraf, Loki, InfluxDB, Alertmanager und Grafana. Reduzierung der Betriebskosten und Verbesserung der Überwachungseffizienz sowie der Fähigkeiten für Geschäftsanalyse."
+        "Transformation der besteheden PHP-Crowdfunding-Anwendung in eine containerbasierte Infrastruktur, die horizontales Skalieren und nahtlose Code-Rollouts über CI/CD-Pipelines ermöglicht. Diese bewirkte eine Verbesserung der Softwarequalitätssicherung, der Entwickler- und Benutzererfahrung sowie der Redunktion Zeit, die Entwickler für Updates der Crowdfunding-Plattform benötigen.",
+        "Migration des Crowdfunding-Plattform-Speichers von NFS zu Ceph Distributed Storage, wodurch gleichzeitiger Lese- und Schreibzugriff ermöglicht wird, was notwendig war für horizontales Skalieren und nahtlose Code-Rollouts der Plattform.",
+        "Neugestaltung des Monitoring-Stacks unter Verwendung von Telegraf, Loki, InfluxDB, Alertmanager und Grafana. Ergebis war eine  Reduzierung der Betriebskosten und Verbesserung der Überwachungseffizienz sowie der Fähigkeiten für Geschäftsanalytik."
       ]
     },
     {
@@ -56,12 +56,11 @@
       "location": "",
       "startDate": "08/2017",
       "endDate": "09/2022",
-      "summary": "Erstellung von Coinboot, einem leichtgewichtigen Framework für Festplattenlose GPU-Computing-Cluster <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video des Konferenzvortrags)</a>",
+      "summary": "Erschaffung von Coinboot, einem leichtgewichtigen Framework für festplattenlose GPU-Computing-Cluster <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video des Konferenzvortrags)</a>",
       "highlights": [
-        "Bereitstellung von Coinboot für über 35.000 Knoten mit 60.000 GPUs in Rechenzentren weltweit, was die Akquisition und den Betrieb von GPU-Computing-Clustern mit minimalen Gesamtkosten ermöglicht und die hohe Effizienz von Coinboot beweist.",
+        "Bereitstellung von Coinboot auf über 35.000 Knoten mit 60.000 GPUs in Rechenzentren weltweit. Basierenden auf immutabler und konfigurationsdriftfreier Infrastruktur was den Aufbau und den Betrieb von GPU-Computing-Clustern mit minimalen Gesamtkosten ermöglichte und die hohe Effizienz von Coinboot belegt.",
         "Entwicklung eines leichtgewichtigen (105 MB) netzwerk-bootfähigen Linux-Images, das auf Skalierbarkeit optimiert ist. Ermöglicht Coinboot den effektiven Betrieb auf Tausenden von Knoten mit Standard-1-Gbit/s-Netzwerkhardware.",
-        "Erstellung eines benutzerfreundlichen Plug-in-Systems, das die Anpassung und unterschiedliche Rechenlasten ohne Neukompilierung des Boot-Images ermöglicht.",
-        "Ermöglichung von unveränderlicher, konfigurationsdriftfreier Infrastruktur für hocheffiziente GPU-Cluster, wodurch Betriebskosten reduziert und minimale Gesamtkosten gewährleistet werden."
+        "Erstellung eines benutzerfreundlichen Plug-in-Systems, das Anpassungen und unterschiedliche Payloads ohne Neugenerierung des Boot-Images ermöglicht."
       ]
     },
     {
@@ -72,9 +71,9 @@
       "endDate": "10/2019",
       "summary": "Verantwortlich für Infrastruktur-Betrieb, Speicher-Migration und Software-Entwicklung",
       "highlights": [
-        "Leitung der Planung und Entwicklung eines mobilen GPU-Container-Rechenzentrum-Software-Stacks. Lieferung innerhalb weniger Monate, Sicherstellung der Zukunft des Unternehmens mit Umsätzen in Millionenhöhe <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video-Link)</a>.",
+        "Leitung der Planung und Entwicklung eines mobilen GPU-Container-Rechenzentrum-Software-Stacks. Dies ermöglichte die Fertigstellung inhalb weniger Monate, Sicherstellung der Zukunft des Unternehmens mit Umsätzen in zweistelliger Millionenhöhe <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video-Link)</a>.",
         "Automatisierung der Einrichtung und Konfiguration von Ceph als einheitlichem OpenStack-Speicher-Backend, Ersetzen des bestehenden OpenStack Swift- und GlusterFS-Setups. Erfolgreiche Bereitstellung im Petabyte-Bereich, Bereitstellung einer optimierten Konfiguration für heterogene Festplatten- und Rackkonfigurationen bei gleichzeitiger Reduzierung der Komplexität und Verbesserung der Speicherleistung.",
-        "Verwaltung von OpenStack-Betrieb, Überwachung und Integration in hochverteilten Mikro-Rechenzentren mit effizienter Abwärmenutzung."
+        "Betrieb von OpenStack, Überwachung und Integration in hochverteilten Mikro-Rechenzentren mit effizienter Abwärmenutzung."
       ]
     },
     {
@@ -158,7 +157,7 @@
       "name": "Kognitive Fähigkeiten",
       "keywords": [
         "Detailgenauigkeit\n",
-        "Divergentes und analytisches Denken\n",
+        "Divergent-analytisches Denken\n",
         "Ausgewogener Pragmatismus"
       ]
     },
@@ -276,6 +275,13 @@
       "name": "IaaS",
       "keywords": [
         "OpenStack"
+      ]
+    },
+     {
+      "name": "ISMS",
+      "keywords": [
+        "ISO/IEC 27001",
+        "CISIS12"
       ]
     },
     {

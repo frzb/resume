@@ -123,7 +123,7 @@ class ResumeHandler(FileSystemEventHandler):
 
             print(f"Rendered HTML written to {output_html_path}")
             print(f"You can view your rendered resume at: file://{output_html_path}")
-            webbrowser.open(output_html_path, new=2)
+            webbrowser.open(output_html_path, new=0)
             return output_html_path
         except Exception as e:
             print(f"Error rendering template: {e}")

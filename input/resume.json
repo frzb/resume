@@ -28,7 +28,7 @@
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
         "Built and led a 5-member remote IT team from the ground up, creating a team with high resilience and self-sufficiency.",
-        "Consistent optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
+        "Continuous optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
         "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing.",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device. Accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
         "Introduction of ERPNext as Open Source ERP software, streamlining business processes and reducing application and data fragmentation.",
@@ -58,10 +58,9 @@
       "endDate": "09/2022",
       "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally, enabling acquisition and operation of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient.",
+        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally. Running immutable and configuratione-drift-free Infrastructure and enabling build-up and operations of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient.",
         "Engineered a lightweight (105 MB) network-bootable diskless Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
-        "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image.",
-        "Enabled immutable, configuration-drift-free infrastructure for high-efficiency GPU clusters, reducing operational costs and ensuring minimal total cost of ownership."
+        "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image."
       ]
     },
     {
@@ -72,7 +71,7 @@
       "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development",
       "highlights": [
-      "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with multimillion-dollar revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>.",
+      "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with a two-digit million revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>.",
       "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance.",
       "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
@@ -276,6 +275,13 @@
       "name": "IaaS",
       "keywords": [
         "OpenStack"
+      ]
+    },
+    {
+      "name": "ISMS",
+      "keywords": [
+        "ISO/IEC 27001",
+        "CISIS12"
       ]
     },
     {
