@@ -9,6 +9,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from weasyprint import HTML
+from weasyprint.text.fonts import FontConfiguration
 
 
 class ResumeHandler(FileSystemEventHandler):
@@ -38,7 +39,8 @@ class ResumeHandler(FileSystemEventHandler):
                 data = self.load_data(f"./input/{file}", self.include_private_data)
                 output_html_path = self.render_template(data, file)
                 self.tailwindcss_build()
-                HTML(output_html_path).write_pdf(f"./output/{name}.pdf")
+                font_config = FontConfiguration()
+                HTML(output_html_path).write_pdf(f"./output/{name}.pdf", stylesheets=["https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap"], font_config=font_config)
 
     def on_closed(self, event):
         print(event)
