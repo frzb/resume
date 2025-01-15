@@ -52,10 +52,10 @@
         </style>
     </head>
     <body class="bg-slate-100 font-ubuntu font-normal">
-            <!-- Language Links -->
+    <!-- Language Links -->
     <div class="max-w-4xl mx-auto top-3 right-3 space-x-2 flex sm:p-0 p-3 items-center justify-end">
         <a href="./index.html" class="no-underline">English</a>
-        <img src="./static/icons/language-icon.svg"  class="h-10    w-10" alt="Select Language">
+        <img src="./static/icons/language-icon.svg"  class="h-10 w-10" alt="Select Language">
         <a href="./index_de.html" class="no-underline">Deutsch</a>
     </div>
         <!-- Main Container -->
@@ -167,5 +167,10 @@
                 </div>
             </div>
         </div>
+    <!-- Repo Links -->
+    <div class="max-w-4xl mx-auto top-3 right-3 space-x-2 flex sm:p-0 p-3 items-center justify-end">
+        <a href="https://github.com/frzb/resume" class="no-underline">Source code for generating this resume |</a>
+        <a href="https://github.com/frzb/resume/commit/{{ short_git_sha }}" class="no-underline">Rev: {{ short_git_sha  }}</a>
+    </div>
     </body>
 </html>

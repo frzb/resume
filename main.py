@@ -4,6 +4,7 @@ import time
 import webbrowser
 import subprocess
 import click
+from git import Repo
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -22,9 +23,13 @@ class ResumeHandler(FileSystemEventHandler):
             lstrip_blocks=True,
             autoescape=select_autoescape(["html", "xml"]),
         )
+        repo = Repo(search_parent_directories=True)
+        self.env.globals.update({
+            'short_git_sha': repo.head.object.hexsha[:7]
+            })
         # Render output on startup
+        print (repo.head.object.hexsha)
         print("Render on startup")
-        self.create_output()
 
     def create_output(self):
         for file in os.listdir("./input"):
