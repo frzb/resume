@@ -29,8 +29,8 @@ class ResumeHandler(FileSystemEventHandler):
             'short_git_sha': repo.head.object.hexsha[:7]
             })
         # Render output on startup
-        print (repo.head.object.hexsha)
         print("Render on startup")
+        self.create_output()
 
     def create_output(self):
         for file in os.listdir("./input"):
