@@ -116,6 +116,7 @@ class ResumeHandler(FileSystemEventHandler):
                 # JSON Resume has no proper I18N support
                 # We do dirty search-and-replace for the headlines translation
                 translations = [
+                    ("Germany", "Deutschland"),
                     ("Work Experience", "Berufserfahrung"),
                     ("Education", "Ausbildung"),
                     ("Skills and Experience", "Kompetenzen und Erfahrung"),

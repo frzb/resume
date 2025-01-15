@@ -48,7 +48,7 @@
                  p { line-height: 1.1 !important; }
 
                 /* Page-break management */
-                li, div { break-inside: avoid; }
+                li, div { break-inside: auto; }
             }
         </style>
     </head>
@@ -91,7 +91,7 @@
                         <h1>{{ basics.name }}</h1>
                         <p>{{ basics.label }}</p>
                         <p>{{ basics.location.address }}</p>
-                        <p>{{ basics.location.postalCode }} {{ basics.location.city }}</p>
+                        <p>{{ basics.location.postalCode }} {{ basics.location.city }}, {{ basics.location.country }}</p>
                         <p>E-Mail: {{ basics.email }}</p>
                     </div>
                     <p>{{ basics.phone }}</p>

@@ -2,7 +2,7 @@
   "basics": {
     "summary": "15 years in operations, infrastructure, software engineering \n People-oriented IT generalist and creative problem-solver",
     "name": "Gunter Miegel",
-    "email": "gunter.miegel@coinboot.io",
+    "email": "gunter.miegel@rgsqd.de",
     "location": {
       "city": "Dresden",
       "country": "Germany"
@@ -31,8 +31,7 @@
         "Continuous optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
         "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing.",
         "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device. Accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
-        "Introduction of ERPNext as Open Source ERP software, streamlining business processes and reducing application and data fragmentation.",
-        "Adapting ERPNext for cloud-native patterns to enable quick deployment of instances within minutes instead of hours, speeding up business process integration development. ",
+        "Introduction of ERPNext as Open Source ERP software, streamlining business processes and reducing application and data fragmentation. With adapting ERPNext to cloud-native patterns quick deployment of instances within minutes instead of hours was possible, speeding up business process integration development.",
         "Established an IT security baseline with the limited resources of an startup by pragmatically applying Zero-Trust and Security-First security models to software development and infrastructure operations to meet IT compliance requirements by the procurement of global corporations. This enabled HolyPoly to receive orders and revenue by these customers.",
         "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
       ]
