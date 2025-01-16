@@ -72,7 +72,7 @@ class ResumeHandler(FileSystemEventHandler):
                 print("Including private data")
                 with open(self.json_path_private) as json_file:
                     self.resume_data_private = json.load(json_file)
-                    merged = self.merge_dicts(file, self.resume_data_private)
+                    merged = self.merge_dicts(resume_data, self.resume_data_private)
                     resume_data = merged
             print("JSON resume data")
             print(resume_data)
