@@ -8,8 +8,7 @@ from git import Repo
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from weasyprint import HTML
-from weasyprint.text.fonts import FontConfiguration
+from playwright.sync_api import sync_playwright
 
 
 class ResumeHandler(FileSystemEventHandler):
@@ -39,8 +38,8 @@ class ResumeHandler(FileSystemEventHandler):
                 data = self.load_data(f"./input/{file}", self.include_private_data)
                 output_html_path = self.render_template(data, file)
                 self.tailwindcss_build()
-                font_config = FontConfiguration()
-                HTML(output_html_path).write_pdf(f"./output/{name}.pdf", stylesheets=["https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap"], font_config=font_config)
+                self.create_pdf(output_html_path, name)
+
 
     def on_closed(self, event):
         print(event)
@@ -50,6 +49,17 @@ class ResumeHandler(FileSystemEventHandler):
         if "4913" not in event.src_path:
             print(f"Detected relevant changes in {event.src_path}")
             self.create_output()
+
+    def create_pdf(self, url, file_name):
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.goto(f"file:///{url}")
+            page.emulate_media(media="print")
+            # Waiting for the side to loaded matters, else the fallback font is applied
+            page.wait_for_function("document.fonts.status === 'loaded'")
+            page.pdf(path=f"./output/{file_name}.pdf", format="A4",landscape=False, margin={"top": "2cm"})
+            browser.close()
 
     def merge_dicts(self, dict1, dict2):
         for key, value in dict2.items():

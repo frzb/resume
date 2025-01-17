@@ -13,7 +13,7 @@ I wanted to get more familiar with one of my weak spots - web development: HTML,
 * Responsive design for mobile devices
 * [Jinja](https://jinja.palletsprojects.com/en/stable/) for HTML templating
 * [pyTailwindCSS](https://pypi.org/project/pytailwindcss/) standalone Tailwind CSS in Python without Node.js 
-* [WeasyPrint](https://weasyprint.org/) for PDF document creation
+* [~~WeasyPrint~~](https://weasyprint.org/)[Playwright](https://playwright.dev/)for PDF document creation
 * Automatic creation of output files in case of changes during development by [Watchdog](https://pypi.org/project/watchdog/)
 * [Poetry](https://pypi.org/project/watchdog/) for dependency management
 
@@ -54,3 +54,8 @@ Private resume data can be placed in  `input/private/private_resume.json`.
 ```
 $  poetry run python3 main.py --include-private-data
 ```
+
+### Bumpy PDF export
+
+At first I used WeasyPrint for PDF export, which worked very good beside the fact that it does not fully support CSS flexbox. Which lead to the layout for the PDFs being not consistent with that from the HTML output.
+Then I switched over the Playwright to use the built-in PDF export from Chromium. This made the PDFs look as expected. Important with this approach is that we instruct Playwright to wait until the whole page is loaded`wait_for_function("document.fonts.status === 'loaded'"`, else the PDF is created with the fallback font.

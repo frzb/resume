@@ -42,6 +42,8 @@ jobs:
           key: venv-${{ hashFiles('poetry.lock') }}
       - name: Install the project dependencies
         run: poetry install
+      - name: Install webbrowser for Playwright
+        run: poetry run playwright install chromium-headless-shell
       - name: Build site
         run: poetry run python3 main.py one-shot
       - name: Upload artifact
