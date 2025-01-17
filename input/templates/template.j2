@@ -93,7 +93,7 @@
                         <p>{{ basics.label }}</p>
                         <p>{{ basics.location.address }}</p>
                         <p>{{ basics.location.postalCode }} {{ basics.location.city }}, {{ basics.location.country }}</p>
-                        <p>E-Mail: {{ basics.email }}</p>
+                        <a class="no-underline" href="mailto:{{ basics.email }}">{{ basics.email }}</a>
                     </div>
                     <p>{{ basics.phone }}</p>
                 </div>
@@ -107,8 +107,8 @@
                             <div class="sm:flex flex-row justify-between items-center">
                                 <h3>
                                     {{ job.position }}
-                                    {% if job.name %}| {{ job.name }}{% endif %}
-                                    {% if job.location %}| {{ job.location }}{% endif %}
+                                    {% if job.name %} | {{ job.name }}{% endif %}
+                                    {% if job.location %} | {{ job.location }}{% endif %}
                                 </h3>
                                 <p>{{ job.startDate }} – {{ job.endDate }}</p>
                             </div>
@@ -132,7 +132,7 @@
                             </div>
                             <p class="font-bold leading-relaxed ml-1 mb-1">
                                 {{ degree.institution }}, {{ degree.location }}
-                                {% if degree.studyType %}| {{ degree.studyType }}{% endif %}
+                                {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
                             </p>
                         </li>
                     {% endfor %}
