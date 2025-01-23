@@ -56,8 +56,9 @@ class ResumeHandler(FileSystemEventHandler):
             page = browser.new_page()
             page.goto(f"file:///{url}")
             page.emulate_media(media="print")
-            # Waiting for the side to loaded matters, else the fallback font is applied
+            # Waiting for the side to be loaded matters, else the fallback font is applied
             page.wait_for_function("document.fonts.status === 'loaded'")
+            page.wait_for_load_state("networkidle")
             page.pdf(path=f"./output/{file_name}.pdf", format="A4",landscape=False, margin={"top": "2cm"})
             browser.close()
 
