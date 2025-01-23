@@ -34,7 +34,7 @@ class ResumeHandler(FileSystemEventHandler):
     def create_output(self):
         for file in os.listdir("./input"):
             if file.endswith(".json"):
-                name = f"_{os.path.splitext(os.path.basename(file))[0]}"
+                name = f"{os.path.splitext(os.path.basename(file))[0]}"
                 data = self.load_data(f"./input/{file}", self.include_private_data)
                 output_html_path = self.render_template(data, file)
                 self.tailwindcss_build()
