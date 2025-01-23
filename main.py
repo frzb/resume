@@ -100,6 +100,8 @@ class ResumeHandler(FileSystemEventHandler):
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
             )
+            # Flush all OS-level file system buffers
+            os.sync()
             print(result.stdout)
             print(result.stderr)
             print("Tailwind CSS compiled successfully:")
