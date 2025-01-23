@@ -100,8 +100,9 @@ class ResumeHandler(FileSystemEventHandler):
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
             )
-            # Flush all OS-level file system buffers
-            os.sync()
+            while not os.path.exists("static/css/tailwind.css"):
+                print(f"Waiting for CSS file to be created...")
+                time.sleep(0.01) 
             print(result.stdout)
             print(result.stderr)
             print("Tailwind CSS compiled successfully:")
