@@ -24,9 +24,7 @@ class ResumeHandler(FileSystemEventHandler):
             autoescape=select_autoescape(["html", "xml"]),
         )
         repo = Repo(search_parent_directories=True)
-        self.env.globals.update({
-            'short_git_sha': repo.head.object.hexsha[:7]
-            })
+        self.env.globals.update({"short_git_sha": repo.head.object.hexsha[:7]})
         # Render output on startup
         print("Render on startup")
         self.create_output()
@@ -39,7 +37,6 @@ class ResumeHandler(FileSystemEventHandler):
                 output_html_path = self.render_template(data, file)
                 self.tailwindcss_build()
                 self.create_pdf(output_html_path, name)
-
 
     def on_closed(self, event):
         print(event)
@@ -56,20 +53,27 @@ class ResumeHandler(FileSystemEventHandler):
             page = browser.new_page()
             page.goto(f"file:///{url}")
             page.emulate_media(media="print")
-            # Waiting for the side to be loaded matters, else the fallback font is applied
+            # Waiting for the custom fonts to be loaded matters, else the fallback font is applied
             page.wait_for_function("document.fonts.status === 'loaded'")
-            # Wait for the CSS file to load
-            page.wait_for_function("""
+            # Wait for the CSS file to be loaded matters as well
+            page.wait_for_function(
+                """
                     () => {
                     const link = [...document.querySelectorAll('link[rel="stylesheet"]')].find(
                     l => l.href.includes('tailwind.css')
                     );
                 return link && link.sheet;
                 }
-            """)
+            """
+            )
             print("CSS file has loaded!")
             page.wait_for_load_state("networkidle")
-            page.pdf(path=f"./output/{file_name}.pdf", format="A4",landscape=False, margin={"top": "2cm"})
+            page.pdf(
+                path=f"./output/{file_name}.pdf",
+                format="A4",
+                landscape=False,
+                margin={"top": "2cm"},
+            )
             browser.close()
 
     def merge_dicts(self, dict1, dict2):
@@ -110,9 +114,6 @@ class ResumeHandler(FileSystemEventHandler):
             result = subprocess.run(
                 command, check=True, capture_output=True, text=True, shell=True
             )
-            while not os.path.exists("static/css/tailwind.css"):
-                print(f"Waiting for CSS file to be created...")
-                time.sleep(0.01) 
             print(result.stdout)
             print(result.stderr)
             print("Tailwind CSS compiled successfully:")
