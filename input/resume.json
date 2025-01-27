@@ -55,7 +55,7 @@
       "location": "Dresden, Germany",
       "startDate": "08/2019",
       "endDate": "present",
-      "summary": "Coding courses for 3rd and 4th graders"
+      "summary": "Weekly coding courses for 3rd and 4th graders"
     },
     {
       "position": "Founder and Lead Software Engineer",
@@ -63,7 +63,7 @@
       "location": "",
       "startDate": "08/2017",
       "endDate": "09/2022",
-      "summary": "Created Coinboot, a lightweight framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
+      "summary": "Created Coinboot, an <a href=\"https://github.com/frzb/coinboot\">Open Source</a> framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
         "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally. Running immutable and configuratione-drift-free Infrastructure and enabling build-up and operations of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient.",
         "Engineered a lightweight (105 MB) network-bootable diskless Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
@@ -113,7 +113,7 @@
       "summary": "Providing IT consulting and support for outreach youth work"
     },
     {
-      "organization": "Coding Courses for Grade Schoolers",
+      "organization": "Weekly coding course for Grade schoolers",
       "position": "Instructor",
       "startDate": "2019",
       "summary": "Providing school children a first contact with coding and engineering"

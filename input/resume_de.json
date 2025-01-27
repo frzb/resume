@@ -55,7 +55,7 @@
       "location": "Dresden, Deutschland",
       "startDate": "08/2019",
       "endDate": "aktuell",
-      "summary": "Programmierkurse für Grundschüler:innen der 3. und 4. Klassenstufe"
+      "summary": "Wöchentliche Programmierkurs für Grundschüler:innen der 3. und 4. Klassenstufe"
     },
     {
       "position": "Gründer und Lead Software Engineer",
@@ -63,7 +63,7 @@
       "location": "",
       "startDate": "08/2017",
       "endDate": "09/2022",
-      "summary": "Erschaffung von Coinboot, einem leichtgewichtigen Framework für festplattenlose GPU-Computing-Cluster <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video des Konferenzvortrags)</a>",
+      "summary": "Erschaffung von Coinboot, einem <a href=\"https://github.com/frzb/coinboot\">Open Source</a> Framework für festplattenlose GPU-Computing-Cluster <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video des Konferenzvortrags)</a>",
       "highlights": [
         "Bereitstellung von Coinboot auf über 35.000 Knoten mit 60.000 GPUs in Rechenzentren weltweit. Basierenden auf immutabler und konfigurationsdriftfreier Infrastruktur was den Aufbau und den Betrieb von GPU-Computing-Clustern mit minimalen Gesamtkosten ermöglichte und die hohe Effizienz von Coinboot belegt.",
         "Entwicklung eines leichtgewichtigen (105 MB) netzwerk-bootfähigen Linux-Images, das auf Skalierbarkeit optimiert ist. Ermöglicht Coinboot den effektiven Betrieb auf Tausenden von Knoten mit Standard-1-Gbit/s-Netzwerkhardware.",
