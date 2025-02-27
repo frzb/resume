@@ -395,6 +395,10 @@
         "OpenVPN",
         "IPsec"
       ]
+    },
+    {
+      "name": "Web Testing",
+      "keywords": ["Playwright"]
     }
   ],
   "languages": [
