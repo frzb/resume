@@ -132,9 +132,12 @@
                                 <h3>{{ degree.area }}</h3>
                                 <p>{{ degree.startDate }} – {{ degree.endDate }}</p>
                             </div>
-                            <p class="font-bold leading-relaxed ml-1 mb-1">
+                            <p class="font-bold leading-relaxed ml-1">
                                 {{ degree.institution }}, {{ degree.location }}
                                 {% if degree.studyType %} | {{ degree.studyType }}{% endif %}
+                            </p>
+                            <p class="font-bold leading-relaxed ml-1">
+                                {% if degree.internship %} {{ degree.internship }}{% endif %}
                             </p>
                         </li>
                     {% endfor %}
