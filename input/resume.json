@@ -20,6 +20,18 @@
   },
   "work": [
     {
+      "position": "Head of IT & Digitalisation",
+      "name": "Statefree",
+      "location": "Munich, Germany",
+      "startDate": "05/2025",
+      "endDate": "present",
+      "summary": "Leading IT-strategy, software development and cybersecurity at a registered non-profit association",
+      "highlights": [
+        "Establishing a Digital Statelessness Determination Procedure (SDP) in Germany by 2027.",
+        "Leading Software Architecture and Development for the Statefree Case Assistant."
+      ]
+    },
+    {
       "position": "Head of IT",
       "name": "HolyPoly",
       "location": "Dresden, Germany",
@@ -28,12 +40,12 @@
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
         "Built and led a 5-member remote IT team from the ground up, creating a team with high resilience and self-sufficiency by maximising the psychological safety.",
-        "Continuous optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support services.",
+        "Continuous optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support and services.",
         "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing.",
-        "Developed a Bluetooth-WebSocket bridge service for a handheld X-ray fluorescence device. Accelerating the detection of inorganic impurities in recyclable plastic toys and power tool housings by 200%, necessary to finish projects in-time and empowering corporate clients to make data-driven decisions on recycled plastic usage in new products based on millions of data points.",
-        "Introduction of ERPNext as Open Source ERP software, streamlining business processes and reducing application and data fragmentation. With adapting ERPNext to cloud-native patterns quick deployment of instances within minutes instead of hours was possible, speeding up business process integration development.",
-        "Established an IT security baseline with the limited resources of an startup by pragmatically applying Zero-Trust and Security-First security models to software development and infrastructure operations to meet IT compliance requirements by the procurement of global corporations. This enabled HolyPoly to receive orders and revenue by these customers.",
-        "Responsible for establishing an ISMS to meet internal and business customer IT security and data protection compliance requirements."
+        "Introduced ERPNext as an open-source ERP, streamlining business processes, reducing application/data fragmentation, and enabling cloud-native deployments in minutes instead of hours for faster process integration.",
+        "Developed a Bluetooth-WebSocket bridge for a handheld XRF device by reverse-engineering, accelerating inorganic impurity detection in recyclable plastic products by 200% empowering clients to make data-driven decisions for reuse of plastics from millions of data points.",
+        "Established an IT security baseline at a startup with limited resource using Zero-Trust and Security-First models, meeting global corporate compliance requirements and enabling revenue from key customers.",
+        "Responsible for establishing an ISMS to ensure IT security and data protection compliance for business customers."
       ]
     },
     {
@@ -44,14 +56,14 @@
       "endDate": "07/2021",
       "summary": "Operations of the crowdfunding platform infrastructure",
       "highlights": [
-        "Transformed the legacy PHP crowdfunding application to run on a container-based infrastructure enabling horizontal scaling with seamless platform code roll-outs via CI/CD pipelines. Improving software QA, developer and user experience and time spent by developers for crowdfunding platform updates.",
-        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access. Necessary for horizontal scaling and seamless platform code roll-out.",
+        "Transformed the legacy PHP crowdfunding plattform to a container-based infrastructure, enabling horizontal scaling, seamless CI/CD roll-outs, improved QA, developer/user experience, and faster platform updates.",
+        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access enabling horizontal scaling and seamless platform code roll-out.",
         "Redesigned the monitoring stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
     {
       "position": "Coding Instructor",
-      "name": "Self-Employed",
+      "name": "Volunteer",
       "location": "Dresden, Germany",
       "startDate": "08/2019",
       "endDate": "present",
