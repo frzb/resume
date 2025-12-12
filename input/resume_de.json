@@ -20,6 +20,18 @@
   },
   "work": [
     {
+      "position": "Head of IT & Digitalisation",
+      "name": "Statefree",
+      "location": "München, Deutschland",
+      "startDate": "05/2025",
+      "endDate": "aktuell",
+      "summary": "Verantwortlich für IT-Strategie, Softwareentwicklung und Cybersicherheit",
+      "highlights": [
+        "Etablierung eines digitalisieren Festellungsverfahren für Staatenlosigkeit in Deutschland bis 2027.",
+        "Leitung der Architektur und Implementierung des Statefree Case Assitant."
+      ]
+    },
+    {
       "position": "Head of IT",
       "name": "HolyPoly",
       "location": "Dresden, Deutschland",
@@ -29,11 +41,11 @@
       "highlights": [
         "Aufbau und Leitung eines 5-köpfigen Remote-IT-Teams von Grund auf, Schaffung eines Teams mit hoher Resilienz und Eigenständigkeit durch die Maximierung der psychologischen Sicherheit.",
         "Kontinuierliche Optimierung der Entwicklungs- und Betriebsprozesse meines Teams, Reduzierung der Durchlaufzeiten um 50 % bei gleichzeitiger Aufrechterhaltung qualitativ hochwertiger IT-Support-Dienste.",
-        "Entwurf einer einheitlichen Softwarearchitektur für Kunststoffrecyclingprogramme multinationaler Spielzeug- und Babyproduktunternehmen, die eine einfache Integration komplexer Rückführungsprozesse in die Unternehmenswebseiten ermöglichte und die Zeit für den Check-In zurückgesandter Waren zur Chargenverfolgung reduzierte.",
-        "Entwicklung eines Bluetooth-WebSocket-Brückendienstes für ein tragbares Röntgenfluoreszenzgerät. Beschleunigung der Erkennung von anorganischen Verunreinigungen in recycelbaren Plastikspielzeugen und Gehäusen von Elektrowerkzeugen um 200 %, wodurch Projekte termingerecht abgeschlossen werden konnten und Kunden datengestützte Entscheidungen über die Verwendung von recyceltem Kunststoff in neuen Produkten basierend auf Millionen von Datenpunkten treffen konnten.",
-        "Einführung von ERPNext als Open-Source-ERP-Software, Straffung von Geschäftsprozessen und Reduzierung der Anwendungs- und Datenfragmentierung. Die Anpassung von ERPNext an Cloud-Native Muster, ermöglichte die schnelle Bereitstellung von ERP-Instanzen innerhalb von Minuten anstelle von Stunden und die Integration von Geschäftsprozessen zu beschleunigen.",
-        "Etablierung einer IT-Sicherheitsgrundlage mit den begrenzten Ressourcen eines Startups durch pragmatische Anwendung von Zero-Trust- und Security-First-Sicherheitsmodellen, um die IT-Compliance-Anforderungen globaler Unternehmen zu erfüllen. Dadurch konnte HolyPoly Aufträge und Umsätze mit diesen Kunden generieren.",
-        "Verantwortlich für die Einrichtung eines ISMS, um die IT-Sicherheits- und Datenschutzanforderungen interner und geschäftlicher Kunden zu erfüllen."
+        "Entwicklung der Softwarearchitektur zur nahtlosen Integration komplexer Rückführungsprozesse für Produkte in Kundenwebsites und zur effizienten Erfassung zurückgesandter Pakete zur Chargen-Verfolgung.",
+        "Entwicklung einer Bluetooth-WebSocket-Brücke für ein tragbares Röntgenfluoreszenzgerät-Gerät durch Reverse Engineering, wodurch die Erkennung anorganischer Verunreinigungen in recycelbaren Kunststoffprodukten um 200 % beschleunigt wurde und Kunden befähigt werden, datenbasierte Entscheidungen für die Wiederverwendung von Kunststoffen aus Millionen von Datenpunkten zu treffen.",
+        "Einführung von ERPNext als Open-Source-ERP, zur Straffung von Geschäftsprozessen, Reduzierung von Anwendungs- und Datenfragmentierung und Ermöglichung von Cloud-nativen Deployments in Minuten statt Stunden für eine schnellere Prozessintegration.",
+        "Etablierung einer IT-Sicherheitsgrundlage mit den begrenzten Ressourcen eines Startups durch Anwendung von Zero-Trust- und Security-First-Sicherheitsmodellen, um die Compliance-Anforderungen globaler Unternehmen zu erfüllen notwendig für Umsätze mit Schlüsselkunden.",
+        "Verantwortlich für den Aufbau eines ISMS zur Sicherstellung der IT-Sicherheits- und Datenschutz-Compliance von Geschäftskunden."
       ]
     },
     {
@@ -44,14 +56,14 @@
       "endDate": "07/2021",
       "summary": "Betrieb der Infrastruktur der Crowdfunding-Plattform",
       "highlights": [
-        "Transformation der besteheden PHP-Crowdfunding-Anwendung in eine containerbasierte Infrastruktur, die horizontales Skalieren und nahtlose Code-Rollouts über CI/CD-Pipelines ermöglicht. Diese bewirkte eine Verbesserung der Softwarequalitätssicherung, der Entwickler- und Benutzererfahrung sowie der Redunktion Zeit, die Entwickler für Updates der Crowdfunding-Plattform benötigen.",
+        "Transformation der Legacy-PHP-Crowdfunding-Plattform zu einer containerbasierten Infrastruktur, wodurch horizontale Skalierung, nahtlose CI/CD-Rollouts, verbesserte Qualitätssicherung, optimierte Entwickler- und Benutzererfahrung sowie schnellere Plattform-Updates ermöglicht wurden.",
         "Migration des Crowdfunding-Plattform-Speichers von NFS zu Ceph Distributed Storage, wodurch gleichzeitiger Lese- und Schreibzugriff ermöglicht wird, was notwendig war für horizontales Skalieren und nahtlose Code-Rollouts der Plattform.",
         "Neugestaltung des Monitoring-Stacks unter Verwendung von Telegraf, Loki, InfluxDB, Alertmanager und Grafana. Ergebis war eine  Reduzierung der Betriebskosten und Verbesserung der Überwachungseffizienz sowie der Fähigkeiten für Geschäftsanalytik."
       ]
     },
     {
       "position": "Coding Instructor",
-      "name": "Freiberuflich",
+      "name": "Ehrenamtlich",
       "location": "Dresden, Deutschland",
       "startDate": "08/2019",
       "endDate": "aktuell",
@@ -78,8 +90,8 @@
       "endDate": "10/2019",
       "summary": "Verantwortlich für Infrastruktur-Betrieb, Speicher-Migration und Software-Entwicklung",
       "highlights": [
-        "Leitung der Planung und Entwicklung eines mobilen GPU-Container-Rechenzentrum-Software-Stacks. Dies ermöglichte die Fertigstellung innerhalb weniger Monate, Sicherstellung der Zukunft des Unternehmens mit Umsätzen in zweistelliger Millionenhöhe <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video-Link)</a>.",
-        "Automatisierung der Einrichtung und Konfiguration von Ceph als einheitlichem OpenStack-Speicher-Backend, Ersetzen des bestehenden OpenStack Swift- und GlusterFS-Setups. Erfolgreiche Bereitstellung im Petabyte-Bereich, Bereitstellung einer optimierten Konfiguration für heterogene Festplatten- und Rackkonfigurationen bei gleichzeitiger Reduzierung der Komplexität und Verbesserung der Speicherleistung.",
+        "Leitung der Planung und Entwicklung eines mobilen GPU-Container-Rechenzentrum-Software-Stacks. Fertigstellung innerhalb weniger Monate, Sicherstellung der Zukunft des Unternehmens mit Umsätzen in zweistelliger Millionenhöhe.<a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video-Link)</a>",
+        "Automatisierung der Einrichtung und Konfiguration von Ceph als einheitlichem OpenStack-Speicher-Backend, Ersetzen des bestehenden OpenStack Swift- und GlusterFS-Setups. Erfolgreiche Bereitstellung im Petabyte-Bereich mit einer optimierten Konfiguration für heterogene Festplatten- und Rackkonfigurationen bei gleichzeitiger Reduzierung der Komplexität und Verbesserung der Speicherleistung.",
         "Betrieb von OpenStack, Überwachung und Integration in hochverteilten Mikro-Rechenzentren mit effizienter Abwärmenutzung."
       ]
     },
