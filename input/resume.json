@@ -1,6 +1,6 @@
 {
   "basics": {
-    "summary": "16 years in operations, infrastructure, software engineering \n People-oriented IT generalist and creative problem-solver",
+    "summary": "17 years in operations, infrastructure, software engineering \n People-oriented IT generalist and creative problem-solver",
     "name": "Gunter Miegel",
     "email": "gunter.miegel@rgsqd.de",
     "location": {
@@ -25,10 +25,11 @@
       "location": "Munich, Germany",
       "startDate": "05/2025",
       "endDate": "present",
-      "summary": "Leading IT-strategy, software development and cybersecurity at a registered non-profit association",
+      "summary": "Leading technical and political IT-strategy, software development at registered non-profit association",
       "highlights": [
-        "Establishing a Digital Statelessness Determination Procedure (SDP) in Germany by 2027.",
-        "Leading Software Architecture and Development for the Statefree Case Assistant."
+        "Lobbying for establishing a Digital Statelessness Determination Procedure (SDP) in Germany by providing technical reference solutions and alligning the legal and administrative frameworks.",
+       "Technical advisor for the historic inclusion of statelessness as a data category in <a href=\"https://www.recht.bund.de/bgbl/1/2026/222/VO\">enacted legislation</a>, establishing legal visibility for stateless people in Germany.",
+        "Leading Software Architecture and Development for the <a href=\"https://gitlab.com/statefree/case-assistant\">Statefree Case Assistant</a>."
       ]
     },
     {
@@ -39,13 +40,12 @@
       "endDate": "11/2024",
       "summary": "Responsible for corporate IT: strategy, infrastructure, services, software development, operations and security",
       "highlights": [
-        "Built and led a 5-member remote IT team from the ground up, creating a team with high resilience and self-sufficiency by maximising the psychological safety.",
-        "Continuous optimization of development and operational methodologies of my team, reducing cycle time by 50% while maintaining high-quality IT support and services.",
-        "Designed software architecture for plastics recycling programs of multinational toy and baby product companies, enabling simple integration of complex reverse logistic processes into customer company websites and time saving check-in of recycled goods return parcels for batch tracing.",
+        "Built and led a 5-member remote IT team from the ground up, with high resilience and self-sufficiency by maximising the psychological safety.",
+        "Led the continuous optimization of development and operational methodologies, reducing team cycle time by 50% while maintaining high service quality.",
+        "Designed software architecture for multinational toy and baby product companies to integrate complex reverse logistics into their websites and streamline the check-in of recycled parcels for batch tracing.",
         "Introduced ERPNext as an open-source ERP, streamlining business processes, reducing application/data fragmentation, and enabling cloud-native deployments in minutes instead of hours for faster process integration.",
         "Developed a Bluetooth-WebSocket bridge for a handheld XRF device by reverse-engineering, accelerating inorganic impurity detection in recyclable plastic products by 200% empowering clients to make data-driven decisions for reuse of plastics from millions of data points.",
-        "Established an IT security baseline at a startup with limited resource using Zero-Trust and Security-First models, meeting global corporate compliance requirements and enabling revenue from key customers.",
-        "Responsible for establishing an ISMS to ensure IT security and data protection compliance for business customers."
+        "Established an IT security baseline to ensure global compliance and enable enterprise revenue, while leading the ongoing development of an ISMS for enhanced data protection and business customer assurance."
       ]
     },
     {
@@ -57,7 +57,7 @@
       "summary": "Operations of the crowdfunding platform infrastructure",
       "highlights": [
         "Transformed the legacy PHP crowdfunding plattform to a container-based infrastructure, enabling horizontal scaling, seamless CI/CD roll-outs, improved QA, developer/user experience, and faster platform updates.",
-        "Migrated crowdfunding platform storage from NFS to Ceph distributed storage enabling concurrent read and write access enabling horizontal scaling and seamless platform code roll-out.",
+        "Migrated crowdfunding platform storage from NFS to Ceph, enabling concurrent R/W access, horizontal scaling and seamless platform code roll-out.",
         "Redesigned the monitoring stack using Telegraf, Loki, InfluxDB, Alertmanager, and Grafana. Leading to reduced operational costs and improved monitoring efficacy while also providing better business intelligence capabilities."
       ]
     },
@@ -77,7 +77,7 @@
       "endDate": "09/2022",
       "summary": "Created Coinboot, an <a href=\"https://github.com/frzb/coinboot\">Open Source</a> framework for diskless GPU computing clusters <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video of conference talk)</a>",
       "highlights": [
-        "Deployed Coinboot to over 35,000 nodes with 60,000 GPUs in data centers globally. Running immutable and configuratione-drift-free Infrastructure and enabling build-up and operations of GPU computing clusters with minimal TCO,  proving that Coinboot is highly efficient.",
+        "Deployed Coinboot to 35,000+ nodes and 60,000 GPUs globally, providing immutable, configuration-drift-free infrastructure with minimal TCO.",
         "Engineered a lightweight (105 MB) network-bootable diskless Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
         "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image."
       ]
@@ -90,8 +90,8 @@
       "endDate": "10/2019",
       "summary": "Responsible for infrastructure operations, storage migration, and software development",
       "highlights": [
-      "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with a two-digit million revenue <a href=\"https://youtube.com/embed/6T9pBa9I_AQ?start=139&end=174&autoplay=1\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>.",
-      "Automated the setup and configuration of Ceph as unified OpenStack storage backend, replacing the existing OpenStack Swift and GlusterFS setup. Deployed successfully at petabyte scale, providing an optimized setup for heterogeneous disk and rack configurations while reducing complexity and increasing storage performance.",
+      "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with a two-digit million revenue <a href=\"https://youtu.be/6T9pBa9I_AQ?si=7cg1hPi-BpQX0w96&t=139\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>.",
+"Automated Ceph deployment as a unified OpenStack storage backend, replacing Swift and GlusterFS. Successfully scaled to petabytes, optimizing for heterogeneous disk/rack configurations while reducing complexity and boosting performance.",
       "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
       ]
     },
@@ -293,6 +293,10 @@
       ]
     },
     {
+      "name": "End-to-End Testing",
+      "keywords": ["Playwright"]
+    },
+    {
       "name": "IaaS",
       "keywords": [
         "OpenStack"
@@ -409,10 +413,6 @@
         "OpenVPN",
         "IPsec"
       ]
-    },
-    {
-      "name": "Web Testing",
-      "keywords": ["Playwright"]
     }
   ],
   "languages": [
