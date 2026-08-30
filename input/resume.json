@@ -25,9 +25,9 @@
       "location": "Munich, Germany",
       "startDate": "05/2025",
       "endDate": "present",
-      "summary": "Leading technical and political IT-strategy, software development at registered non-profit association",
+      "summary": "Leading technical and political IT-strategy, software development at a human rights organisation",
       "highlights": [
-        "Lobbying for establishing a Digital Statelessness Determination Procedure (SDP) in Germany by providing technical reference solutions and alligning the legal and administrative frameworks.",
+        "Lobbying for a digital Statelessness Determination Procedure (SDP) in Germany by providing technical reference solutions and alligning the legal and administrative frameworks.",
        "Technical advisor for the historic inclusion of statelessness as a data category in <a href=\"https://www.recht.bund.de/bgbl/1/2026/222/VO\">enacted legislation</a>, establishing legal visibility for stateless people in Germany.",
         "Leading Software Architecture and Development for the <a href=\"https://gitlab.com/statefree/case-assistant\">Statefree Case Assistant</a>."
       ]
@@ -79,7 +79,7 @@
       "highlights": [
         "Deployed Coinboot to 35,000+ nodes and 60,000 GPUs globally, providing immutable, configuration-drift-free infrastructure with minimal TCO.",
         "Engineered a lightweight (105 MB) network-bootable diskless Linux image optimized for scalability. Allowing Coinboot to run effectively on thousands of nodes using standard 1 Gbit/s network hardware.",
-        "Created a user-friendly plugin system enabling customization and different computing workloads without rebuilding the boot image."
+        "Created a user-friendly plugin system for customization and different computing workloads without rebuilding the boot image."
       ]
     },
     {
@@ -88,11 +88,11 @@
       "location": "Dresden, Germany",
       "startDate": "04/2014",
       "endDate": "10/2019",
-      "summary": "Responsible for infrastructure operations, storage migration, and software development",
+      "summary": "Responsible for OpenStack infrastructure operations, storage migration, and software development",
       "highlights": [
       "Led the planning and development of a mobile GPU container datacenter software stack. Delivering within a few months, securing the company’s future with a two-digit million revenue <a href=\"https://youtu.be/6T9pBa9I_AQ?si=7cg1hPi-BpQX0w96&t=139\" target=\"_blank\" rel=\"noopener noreferrer\">(Video Link)</a>.",
 "Automated Ceph deployment as a unified OpenStack storage backend, replacing Swift and GlusterFS. Successfully scaled to petabytes, optimizing for heterogeneous disk/rack configurations while reducing complexity and boosting performance.",
-      "Managed OpenStack operations, monitoring, and integration in highly-distributed micro datacenters with efficient waste heat reuse."
+      "Developing an automated system monitoring in highly-distributed micro datacenters with waste heat reuse."
       ]
     },
     {
@@ -137,8 +137,7 @@
       "location": "Dresden, Germany",
       "area": "State-certified technician for information and communication technology",
       "startDate": "2007",
-      "endDate": "2009",
-      "internship": "15 weeks internship at Schlittermann - internet & unix support"
+      "endDate": "2009"
 
     },
     {
